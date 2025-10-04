@@ -6,6 +6,5 @@ instance_define(id, "func", function(){});
 selected = false;
 icon_w = sprite_get_width(sp_player_hp);
 float = 0;
-dest_y = room_height - ( room_height/4 );
 number = instance_number(Card);
-wait = ( number - 1 ) * 20
+wait = ( number - 1 ) * 20;

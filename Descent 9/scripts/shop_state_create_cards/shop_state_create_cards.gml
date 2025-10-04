@@ -17,7 +17,6 @@ function shop_state_create_cards(){
 			{
 				_new_card = array_get_weighted(global.__card_pool, global.__card_weights, true);
 			}			
-			show_debug_message(_new_card);
 			array_push(_stored, _new_card);
 			
 			// Create card
@@ -38,7 +37,7 @@ function shop_state_create_cards(){
 				_proceed = false;
 				continue;
 			}
-			if ( !lerp_to_location(id, x, dest_y, 0.3) ) _proceed = false;	
+			if ( !lerp_to_location(id, x, (room_height/2) + 16, 0.3) ) _proceed = false;	
 		}
 	}
 

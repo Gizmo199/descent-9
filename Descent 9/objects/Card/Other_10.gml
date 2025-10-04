@@ -10,13 +10,13 @@ if ( selected ) _sprite = sp_player_hp_highlight;
 // Draw normal hp cost
 repeat(cost[0])
 {
-	draw_sprite(_sprite, 0, _x, _y);
+	draw_sprite(_sprite, 0, _x, _y + 1);
 	_x += icon_w;
 }
 
 // Draw max hp cost
 repeat(cost[1])
 {
-	draw_sprite(_sprite, 1, _x, _y);
+	draw_sprite(_sprite, 1, _x, _y + 1);
 	_x += icon_w;
 }

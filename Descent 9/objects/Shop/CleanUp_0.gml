@@ -4,5 +4,4 @@ with ( Entity )
 	with ( component_get(Component.Health) ) highlight_reset();	
 	component_activate_all();
 }
-with ( cards[selected] ) func();
 array_foreach(cards, instance_destroy);

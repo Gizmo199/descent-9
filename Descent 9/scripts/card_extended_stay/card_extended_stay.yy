@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"card_kittyphysics",
+  "%Name":"card_extended_stay",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"card_kittyphysics",
+  "name":"card_extended_stay",
   "parent":{
     "name":"Cards",
     "path":"folders/Scripts/Cards.yy",

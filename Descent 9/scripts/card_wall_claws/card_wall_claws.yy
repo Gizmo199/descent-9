@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"card_wallclaws",
+  "%Name":"card_wall_claws",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"card_wallclaws",
+  "name":"card_wall_claws",
   "parent":{
     "name":"Cards",
     "path":"folders/Scripts/Cards.yy",

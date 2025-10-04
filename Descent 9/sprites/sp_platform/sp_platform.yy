@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"cadb900f-2aaf-4157-b3ce-a86ad149c040","blendMode":0,"displayName":"default","isLocked":false,"name":"cadb900f-2aaf-4157-b3ce-a86ad149c040","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6413ed4b-2fe9-4a26-99ff-4d408152ae57","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"6413ed4b-2fe9-4a26-99ff-4d408152ae57","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sp_platform",
   "nineSlice":{
@@ -29,7 +30,7 @@
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":21,
+    "left":20,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
     "right":21,
@@ -83,7 +84,7 @@
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
     "seqHeight":42.0,
-    "seqWidth":54.0,
+    "seqWidth":53.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
@@ -96,7 +97,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":27,
+    "xorigin":26,
     "yorigin":0,
   },
   "swatchColours":null,
@@ -107,5 +108,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":54,
+  "width":53,
 }

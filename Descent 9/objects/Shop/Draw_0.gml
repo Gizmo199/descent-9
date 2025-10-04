@@ -5,7 +5,7 @@ draw_sprite_tiled(sp_background_shop, 0, 0, current_time/60);
 var _x = room_width/2;
 var _y = -abs(dcos(current_time/50))*6;
 skull_x = lerp(skull_x, _x, 0.15);
-skull_y = lerp(skull_y, _y, 0.15);
+skull_y = lerp(skull_y, _y - 8, 0.15);
 
 // Draw behind eye
 draw_sprite(sp_background_skull, 1, skull_x, skull_y);

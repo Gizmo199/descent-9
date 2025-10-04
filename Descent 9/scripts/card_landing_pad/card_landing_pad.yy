@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"card_landing_pad",
   "parent":{
-    "name":"Cards",
-    "path":"folders/Scripts/Cards.yy",
+    "name":"Environment",
+    "path":"folders/Scripts/Cards/Environment.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

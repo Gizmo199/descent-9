@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"card_create",
+  "%Name":"card_zoomies",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"card_create",
+  "name":"card_zoomies",
   "parent":{
-    "name":"System",
-    "path":"folders/Scripts/Cards/System.yy",
+    "name":"Agility",
+    "path":"folders/Scripts/Cards/Agility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

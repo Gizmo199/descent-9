@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"card_blank",
   "parent":{
-    "name":"Cards",
-    "path":"folders/Scripts/Cards.yy",
+    "name":"System",
+    "path":"folders/Scripts/Cards/System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

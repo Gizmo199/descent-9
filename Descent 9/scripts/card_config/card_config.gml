@@ -5,6 +5,8 @@ enum eCard {
 	Helevator,
 	ExtendedStay,
 	LandingPad,
+	Zoomies,
+	BirdCatcher,
 	
 	Sizeof
 }
@@ -29,3 +31,5 @@ card_register(eCard.WallClaws, card_wall_claws);
 card_register(eCard.Helevator, card_helevator);
 card_register(eCard.ExtendedStay, card_extended_stay);
 card_register(eCard.LandingPad, card_landing_pad);
+card_register(eCard.Zoomies, card_zoomies);
+card_register(eCard.BirdCatcher, card_bird_catcher);

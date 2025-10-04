@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"card_extended_stay",
   "parent":{
-    "name":"Cards",
-    "path":"folders/Scripts/Cards.yy",
+    "name":"Health",
+    "path":"folders/Scripts/Cards/Health.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,5 +1,5 @@
 function cmp_movespeed(e) : cmp_base(e) constructor {
 	
-	mult = 2;
+	mult = 1.5;
 	
 }

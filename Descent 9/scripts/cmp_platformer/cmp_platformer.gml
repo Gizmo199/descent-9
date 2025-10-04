@@ -4,7 +4,7 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 	hspeed = 0;
 	vspeed = 0;
 	move_speed = 2;
-	jump_speed = 4;
+	jump_speed = 3;
 	coyote_time = 0;
 	coyote_time_reset = 5;
 	

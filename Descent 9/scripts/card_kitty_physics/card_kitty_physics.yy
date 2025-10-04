@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"card_kitty_physics",
   "parent":{
-    "name":"Cards",
-    "path":"folders/Scripts/Cards.yy",
+    "name":"Agility",
+    "path":"folders/Scripts/Cards/Agility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

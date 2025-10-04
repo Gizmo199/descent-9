@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"component_exists",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"component_exists",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/Scripts/ECS/Functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

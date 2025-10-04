@@ -1,0 +1,21 @@
+function card_helevator() : card_base() constructor {
+	
+	limit= true;
+	name = "Helevator"
+	desc = "Add another platform to the game";
+	cost = [0, 2];
+	icon = sp_card_icon_helevator;
+	func = function(){
+		var _offset = room_width/3;
+		with ( Platform )
+		{
+			x = _offset;
+			instance_create_layer(room_width - _offset, y - random_range(0, 128), layer, Platform);
+		}
+	}
+	odds = function(){
+		if ( instance_number(Platform) > 1 ) return 0;
+		return 20;
+	}
+	
+}

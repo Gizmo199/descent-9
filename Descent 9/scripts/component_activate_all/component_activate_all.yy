@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"component_activate_all",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"component_activate_all",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/Scripts/ECS/Functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

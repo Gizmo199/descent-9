@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_kittyphysics",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_kittyphysics",
+  "parent":{
+    "name":"Cards",
+    "path":"folders/Scripts/Cards.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

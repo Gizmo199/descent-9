@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"lerp_to_location",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"lerp_to_location",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

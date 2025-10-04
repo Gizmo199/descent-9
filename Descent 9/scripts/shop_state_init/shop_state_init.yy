@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"shop_state_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"shop_state_init",
+  "parent":{
+    "name":"Shop",
+    "path":"folders/Scripts/Shop.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

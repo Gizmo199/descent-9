@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmp_dash",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmp_dash",
+  "parent":{
+    "name":"Components",
+    "path":"folders/Scripts/ECS/Components.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

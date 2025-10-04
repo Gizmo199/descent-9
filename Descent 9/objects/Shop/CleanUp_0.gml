@@ -1,0 +1,8 @@
+with ( Entity )
+{
+	with ( component_get(Component.Platformer) ) speed_reset();
+	with ( component_get(Component.Health) ) highlight_reset();	
+	component_activate_all();
+}
+with ( cards[selected] ) func();
+array_foreach(cards, instance_destroy);

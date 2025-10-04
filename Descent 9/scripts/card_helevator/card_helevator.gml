@@ -1,8 +1,7 @@
 function card_helevator() : card_base() constructor {
 	
-	limit= true;
-	name = "Helevator"
-	desc = "Add another platform to the game";
+	name = "Hellevator"
+	desc = "Adds another hellevator platform";
 	cost = [0, 2];
 	icon = sp_card_icon_environment;
 	func = function(){

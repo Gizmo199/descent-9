@@ -1,6 +1,5 @@
 function card_wall_claws() : card_base() constructor {
 	
-	limit= true;
 	name = "Wall Claws"
 	desc = "Climb and Cling to walls by using arrow keys";
 	cost = [0, 1];

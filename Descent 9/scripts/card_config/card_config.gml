@@ -4,6 +4,7 @@ enum eCard {
 	WallClaws,
 	Helevator,
 	ExtendedStay,
+	LandingPad,
 	
 	Sizeof
 }
@@ -22,8 +23,9 @@ global.__card_weights	= array_create(eCard.Sizeof, undefined);
 global.__card_limits	= array_create(eCard.Sizeof, undefined);
 
 // Register cards
-card_register(eCard.Blank, card_base);
+card_register(eCard.Blank, card_blank);
 card_register(eCard.KittyPhysics, card_kitty_physics);
 card_register(eCard.WallClaws, card_wall_claws);
 card_register(eCard.Helevator, card_helevator);
 card_register(eCard.ExtendedStay, card_extended_stay);
+card_register(eCard.LandingPad, card_landing_pad);

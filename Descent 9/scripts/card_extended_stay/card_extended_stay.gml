@@ -2,7 +2,7 @@ function card_extended_stay() : card_base() constructor {
 	
 	name = "Extended Stay"
 	desc = "Gain +1 [sp_player_hp, 1]";
-	cost = [4, 0];
+	cost = [3, 0];
 	icon = sp_card_icon_health;
 	func = function(){
 		with ( component_get(Component.Health, Player) ) add_max(1);	

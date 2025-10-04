@@ -86,7 +86,7 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 			// Update hspeed
 			c.hspeed = _ix * c.get_movespeed();
 			if ( place_meeting(x + c.hspeed, y, Collider) ) c.hspeed = 0;
-			
+
 			// Update vspeed
 			if ( !place_meeting(x, y + 1, Collider) )
 			{
@@ -102,6 +102,9 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 			// Update jumping
 			if ( _ij && !_ij_prev ) c.jump();
 			if ( !_hanging && !_ij && c.vspeed < 0 ) c.vspeed = 0;
+			
+			// Check our head
+			if ( c.vspeed < 0 && place_meeting(x, y-1, Collider) ) c.vspeed = 1;	
 			
 			// Update entity position
 			x += c.hspeed;

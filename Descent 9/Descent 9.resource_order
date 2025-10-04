@@ -85,6 +85,7 @@
     {"name":"__scribble_system","order":19,"path":"scripts/__scribble_system/__scribble_system.yy",},
     {"name":"__scribble_texture_get_material","order":20,"path":"scripts/__scribble_texture_get_material/__scribble_texture_get_material.yy",},
     {"name":"__scribble_tick","order":21,"path":"scripts/__scribble_tick/__scribble_tick.yy",},
+    {"name":"approach","order":3,"path":"scripts/approach/approach.yy",},
     {"name":"array_get_weighted","order":2,"path":"scripts/array_get_weighted/array_get_weighted.yy",},
     {"name":"card_base","order":1,"path":"scripts/card_base/card_base.yy",},
     {"name":"card_bird_catcher","order":2,"path":"scripts/card_bird_catcher/card_bird_catcher.yy",},

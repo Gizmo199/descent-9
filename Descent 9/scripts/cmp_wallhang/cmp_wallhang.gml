@@ -16,7 +16,7 @@ function cmp_wallhang(e) : cmp_base(e) constructor {
 		var c = self;
 		with ( entity )
 		{
-			if ( place_meeting(x + _ix*2, y, Collider) ) 
+			if ( place_meeting(x + _ix, y, Collider) ) 
 			{
 				c.hanging = true;
 				with ( component_get(Component.Platformer) )

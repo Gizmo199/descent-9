@@ -114,6 +114,7 @@
     {"id":{"name":"__scribble_system","path":"scripts/__scribble_system/__scribble_system.yy",},},
     {"id":{"name":"__scribble_texture_get_material","path":"scripts/__scribble_texture_get_material/__scribble_texture_get_material.yy",},},
     {"id":{"name":"__scribble_tick","path":"scripts/__scribble_tick/__scribble_tick.yy",},},
+    {"id":{"name":"approach","path":"scripts/approach/approach.yy",},},
     {"id":{"name":"array_get_weighted","path":"scripts/array_get_weighted/array_get_weighted.yy",},},
     {"id":{"name":"card_base","path":"scripts/card_base/card_base.yy",},},
     {"id":{"name":"card_bird_catcher","path":"scripts/card_bird_catcher/card_bird_catcher.yy",},},

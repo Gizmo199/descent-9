@@ -9,7 +9,7 @@ function card_helevator() : card_base() constructor {
 		with ( Platform )
 		{
 			x = _offset;
-			instance_create_layer(room_width - _offset, y - random_range(0, 64), layer, Platform);
+			instance_create_layer(room_width - _offset, y, layer, Platform);
 		}
 	}
 	odds = function(){

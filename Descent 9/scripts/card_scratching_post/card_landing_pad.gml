@@ -1,6 +1,6 @@
 function card_landing_pad() : card_base() constructor {
 	
-	incr = 2;
+	incr = 1.5;
 	name = "Landing Pad"
 	desc = "Increase size of platforms";
 	cost = [0, 0];

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_mezzanine",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_mezzanine",
+  "parent":{
+    "name":"Environment",
+    "path":"folders/Cards/Environment.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

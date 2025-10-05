@@ -1,24 +1,24 @@
-function card_landing_pad() : card_base() constructor {
+function card_scratching_post() : card_base() constructor {
 	
-	incr = 2;
-	name = "Landing Pad"
-	desc = "Increase size of platforms";
+	incr = 1.5;
+	name = "Scratching Post"
+	desc = "Increase height of mezzanines";
 	cost = [0, 0];
 	icon = sp_card_icon_environment;
 	func = function(){
 		var _incr = incr;
-		with ( Platform ) image_xscale = _incr;
+		with ( Mezzanine ) image_yscale = _incr;
 	}
-	odds = function(){
+	odds = function(){		
 		var _added = 0;
 		var _extended = 0;
-		var _num = instance_number(Platform);
+		var _num = instance_number(Mezzanine);
 		var _incr = incr;
 		
 		// Check if platforms have been extended and give better odds if not
-		with ( Platform )
+		with ( Mezzanine )
 		{
-			if ( image_xscale < _incr ) _added += 5;
+			if ( image_yscale < _incr ) _added += 5;
 			else _extended++;
 		}
 		// All platforms extended? No odds

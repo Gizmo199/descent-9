@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"HazardRock",
+  "%Name":"obj_falling_rock",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Hurtbox","path":"objects/Hurtbox/Hurtbox.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"HazardRock",
+  "name":"obj_falling_rock",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemies",

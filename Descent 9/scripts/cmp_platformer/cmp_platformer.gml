@@ -132,8 +132,26 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 			if ( _hanging && sign(_ix) != 0 ) image_xscale = -sign(_ix);
 			
 			// Fell out of room? Damage us
-			if ( outside_room() ) component_add(Component.Damage);
+			if ( outside_room() ) 
+			{
+				component_add(Component.Damage);
+				var _shield = false;
+				with ( component_get(Component.Shield) ) _shield = !used;
+				
+				// Wrap
+				if( _shield )
+				{
+					if ( x > room_width ) x -= room_width;
+					if ( x < 0 ) x += room_width;
+					if ( y > room_height) y -= room_height;
+					if ( y < 0 ) y += room_height;
+				}
+			}
 		}
+		
+		// Clamp speeds
+		vspeed = clamp(vspeed, -jump_speed, jump_speed);
+		hspeed = clamp(hspeed, -move_speed, move_speed);
 		
 	}
 	draw = function(){

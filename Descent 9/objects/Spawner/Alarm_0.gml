@@ -1,4 +1,4 @@
-alarm[0] = 30;
+alarm[0] = wave_rates[wave];
 if ( instance_exists(Shop) ) exit;
 
 var _wave_enemy = wave_enemy[wave];

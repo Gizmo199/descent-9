@@ -3,6 +3,16 @@ function cmp_damage(e) : cmp_base(e) constructor {
 	amount = 1;
 	create = function(){
 		
+		// Block damage?
+		with ( component_get(Component.Shield, entity) ) 
+		{
+			if ( !used ) 
+			{
+				component_remove(Component.Damage, entity);	
+				return;	
+			}
+		}
+		
 		var c = self;
 		with ( component_get(Component.Hurtbox, entity) ) on_damage();		
 		with ( component_get(Component.Health, entity) ) 

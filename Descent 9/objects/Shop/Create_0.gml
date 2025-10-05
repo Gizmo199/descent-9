@@ -25,3 +25,4 @@ component_add(Component.LocalInput);
 
 // Destroy enemies
 with ( Enemy ) instance_destroy();
+with ( HPToken ) instance_destroy();

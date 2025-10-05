@@ -14,3 +14,6 @@ black = [
 	color_get_green(C_BLACK)/255,
 	color_get_blue(C_BLACK)/255
 ];
+
+timer = 1;
+blink = false;

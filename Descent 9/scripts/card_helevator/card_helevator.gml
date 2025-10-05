@@ -14,7 +14,7 @@ function card_helevator() : card_base() constructor {
 	}
 	odds = function(){
 		if ( instance_number(Platform) > 1 ) return 0;
-		return 20;
+		return 25;
 	}
 	
 }

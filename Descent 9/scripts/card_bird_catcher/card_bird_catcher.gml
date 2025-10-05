@@ -9,7 +9,7 @@ function card_bird_catcher() : card_base() constructor {
 	}
 	odds = function(){
 		if ( component_exists(Component.JumpSpeed, Player) ) return 0;
-		return 26;
+		return 32;
 	}
 	
 }

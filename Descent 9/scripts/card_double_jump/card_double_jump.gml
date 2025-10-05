@@ -9,7 +9,7 @@ function card_double_jump() : card_base() constructor {
 	}
 	odds = function(){
 		if ( component_exists(Component.DoubleJump, Player) ) return 0;
-		return 60;
+		return 75;
 	}
 	
 }

@@ -12,7 +12,6 @@ blink = false;
 blink_time_reset = 3;
 blink_time = blink_time_reset;
 
-
 var _this = id;
 with ( Player ) 
 {
@@ -21,9 +20,11 @@ with ( Player )
 }
 
 if ( sprite_index != sp_hazard_rock_large ) exit;
-var _this = id;
-with ( HazardRock ) 
-{
-	if ( id == _this ) continue;
-	if ( sprite_index == sp_hazard_rock_large ) instance_destroy(other);
-}
+
+var _total = 1;
+var _number = instance_number(object_index) - 1;
+var _wave = 0;
+with ( Spawner ) _wave = wave;
+if ( _wave > 3 ) _total = 2;
+if ( _wave > 6 ) _total = 3;
+if ( _number >= _total ) instance_destroy();

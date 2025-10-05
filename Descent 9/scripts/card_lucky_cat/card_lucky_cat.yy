@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_lucky_cat",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_lucky_cat",
+  "parent":{
+    "name":"Health",
+    "path":"folders/Cards/Health.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

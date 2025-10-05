@@ -13,11 +13,13 @@ enum eCard {
 	Redraw,
 	Mezzanine,
 	HighGround,
+	LuckyCat,
+	Impurrvious,
 	
 	Sizeof
 }
 global.__card_forced = [];
-//global.__card_forced = [eCard.Hellavator, eCard.Mezzanine, eCard.ScratchingPost];
+//global.__card_forced = [eCard.Impurrvious];
 
 show_debug_message($"Total number of cards : {eCard.Sizeof}");
 function card_register(_enum, _constructor){
@@ -49,3 +51,5 @@ card_register(eCard.Catnip, card_catnip);
 card_register(eCard.Redraw, card_redraw);
 card_register(eCard.Mezzanine, card_mezzanine);
 card_register(eCard.HighGround, card_high_ground);
+card_register(eCard.LuckyCat, card_lucky_cat);
+card_register(eCard.Impurrvious, card_impurrvious);

@@ -9,7 +9,7 @@ function card_zoomies() : card_base() constructor {
 	}
 	odds = function(){
 		if ( component_exists(Component.MoveSpeed, Player) ) return 0;
-		return 43;
+		return 23;
 	}
 	
 }

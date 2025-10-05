@@ -41,12 +41,10 @@ if ( place_meeting(x, y+vsp, Collider) )
 	if ( life > 0 ) 
 	{
 		while ( !place_meeting(x, y+1, Collider) ) y++;
-		if ( place_meeting(x, y, Hurtbox) )
-		{
-			var _in = id;
-			var _hb = instance_nearest(x, y, Hurtbox);
-			with ( _hb ) event_perform(ev_collision, _in);
-		}
+		var _in = id;
+		var _hb = instance_nearest(x, y, Hurtbox);
+		with ( _hb ) event_perform(ev_collision, _in);
+		
 		blink = true;
 		life--;
 		vsp *= -res;
@@ -57,6 +55,31 @@ if ( place_meeting(x, y+vsp, Collider) )
 	{
 		if ( sprite_index == sp_hazard_rock_large )
 		{
+			// Check to drop hp token
+			with ( component_get(Component.Luck, Player) )
+			{
+				if ( random_chance(chance) ) 
+				{
+					var _index = 0;
+					var _chance = 25;
+					var _create = true;
+					with ( component_get(Component.Health, entity) )
+					{
+						if ( get() < 3 ) _chance = 0;	
+						if ( get() == get_max() ) _create = false;
+					}
+					if ( random_chance(_chance) ) _index = 1;
+					
+					if ( _create ) 
+					{
+						instance_create_layer(other.x, other.y, other.layer, HPToken, {
+							image_index : _index	
+						});
+					}
+				}
+			}
+			
+			// Spawn smaller rocks			
 			var _numb = 2;
 			var _left = false;
 			if ( _wave < 2 ) 
@@ -73,7 +96,7 @@ if ( place_meeting(x, y+vsp, Collider) )
 			}
 			repeat(_numb)
 			{
-				with ( instance_create_layer(x, y, layer, HazardRock, {
+				with ( instance_create_layer(x, y, layer, object_index, {
 					sprite_index : sp_hazard_rock_small	
 				}) )
 				{
@@ -94,5 +117,5 @@ if ( place_meeting(x, y+vsp, Collider) )
 }
 
 x += hsp;
-if ( y < room_height ) return;
+if ( y < room_height ) exit;
 if ( outside_room() ) instance_destroy();

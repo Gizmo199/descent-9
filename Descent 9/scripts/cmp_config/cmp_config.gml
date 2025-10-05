@@ -10,6 +10,8 @@ enum Component {
 	MoveSpeed,
 	JumpSpeed,
 	Hurtbox,
+	Shield,
+	Luck,
 	Sizeof
 }
 #macro __entity_component_array struct_get_from_hash(self, global.__component_hash)
@@ -31,3 +33,5 @@ component_define(Component.MoveSpeed, cmp_movespeed);
 component_define(Component.JumpSpeed, cmp_jumpspeed);
 component_define(Component.Naptime, cmp_naptime);
 component_define(Component.Hurtbox, cmp_hurtbox);
+component_define(Component.Luck, cmp_luck);
+component_define(Component.Shield, cmp_shield);

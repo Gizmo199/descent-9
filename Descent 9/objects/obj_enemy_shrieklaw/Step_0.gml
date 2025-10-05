@@ -13,19 +13,30 @@ if ( point_distance(x, y, dest_x, dest_y) > 1 )
 }
 else
 {
+	if ( --wait > 0 ) 
+	{
+		x = dest_x;
+		y = dest_y + dcos(current_time*10);
+		return;
+	}
+	y = dest_y;
+	wait = wait_time;
 	var _this = self;
 	journey--;
-	with ( Player ) 
+	if ( journey > 0 )
 	{
-		other.dest_x = x;
-		other.dest_y = y;
+		with ( Player ) 
+		{
+			other.dest_x = x;
+			other.dest_y = y;
+		}	
 	}
-	if ( journey == -1 )
+	else if ( journey == 0 )
 	{
 		dest_x = xstart;
 		dest_y = ystart;
 	}
-	else if ( journey < -1 ) instance_destroy();
+	else if ( journey < 0 ) instance_destroy();
 	else with ( instance_create_layer(x, y, layer, obj_enemy_shriek, {
 		handler : _this	
 	}) ) 

@@ -239,6 +239,8 @@
     {"name":"sp_card_icon_environment","order":2,"path":"sprites/sp_card_icon_environment/sp_card_icon_environment.yy",},
     {"name":"sp_card_icon_health","order":3,"path":"sprites/sp_card_icon_health/sp_card_icon_health.yy",},
     {"name":"sp_collider_circle_8x8","order":1,"path":"sprites/sp_collider_circle_8x8/sp_collider_circle_8x8.yy",},
+    {"name":"sp_enemy_shrieklaw_dot","order":5,"path":"sprites/sp_enemy_shrieklaw_dot/sp_enemy_shrieklaw_dot.yy",},
+    {"name":"sp_enemy_shrieklaw_line","order":4,"path":"sprites/sp_enemy_shrieklaw_line/sp_enemy_shrieklaw_line.yy",},
     {"name":"sp_enemy_shrieklaw","order":3,"path":"sprites/sp_enemy_shrieklaw/sp_enemy_shrieklaw.yy",},
     {"name":"sp_enemy_skyclaw","order":2,"path":"sprites/sp_enemy_skyclaw/sp_enemy_skyclaw.yy",},
     {"name":"sp_hazard_rock_small","order":1,"path":"sprites/sp_hazard_rock_small/sp_hazard_rock_small.yy",},

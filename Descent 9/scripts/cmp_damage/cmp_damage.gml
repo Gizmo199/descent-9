@@ -3,13 +3,6 @@ function cmp_damage(e) : cmp_base(e) constructor {
 	amount = 1;
 	create = function(){
 		
-		// Ducking? 
-		with ( component_get(Component.Duck, entity) ) 
-		{
-			if ( ducking ) return component_remove(Component.Damage, entity);	
-		}
-		
-		
 		// Block damage?
 		with ( component_get(Component.Shield, entity) ) 
 		{

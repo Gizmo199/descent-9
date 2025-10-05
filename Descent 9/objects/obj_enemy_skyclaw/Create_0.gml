@@ -12,6 +12,13 @@ angle_cur = 0;
 intro = true;
 wait = 30;
 
+var _total = instance_number(object_index);
+if( _total > 3 ) 
+{
+	instance_destroy();
+	with ( Spawner ) alarm[0] = 1;
+}
+
 var _wave = 0;
 with ( Spawner ) _wave = wave;
 switch(_wave)

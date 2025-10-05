@@ -27,4 +27,17 @@ var _wave = 0;
 with ( Spawner ) _wave = wave;
 if ( _wave > 3 ) _total = 2;
 if ( _wave > 6 ) _total = 3;
-if ( _number >= _total ) instance_destroy();
+if ( _number >= _total ) 
+{
+	instance_destroy();
+	with ( Spawner ) alarm[0] = 1;
+}
+
+super_on_collision = on_collision;
+on_collision = function(_instance){
+	with ( component_get(Component.Duck, Player) ) 	
+	{
+		if ( ducking ) return;
+	}
+	super_on_collision(_instance);
+}

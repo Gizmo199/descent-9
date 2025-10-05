@@ -297,6 +297,8 @@
     {"id":{"name":"sp_card_icon_health","path":"sprites/sp_card_icon_health/sp_card_icon_health.yy",},},
     {"id":{"name":"sp_collider_box_8x8","path":"sprites/sp_collider_box_8x8/sp_collider_box_8x8.yy",},},
     {"id":{"name":"sp_collider_circle_8x8","path":"sprites/sp_collider_circle_8x8/sp_collider_circle_8x8.yy",},},
+    {"id":{"name":"sp_enemy_shrieklaw_dot","path":"sprites/sp_enemy_shrieklaw_dot/sp_enemy_shrieklaw_dot.yy",},},
+    {"id":{"name":"sp_enemy_shrieklaw_line","path":"sprites/sp_enemy_shrieklaw_line/sp_enemy_shrieklaw_line.yy",},},
     {"id":{"name":"sp_enemy_shrieklaw","path":"sprites/sp_enemy_shrieklaw/sp_enemy_shrieklaw.yy",},},
     {"id":{"name":"sp_enemy_skyclaw","path":"sprites/sp_enemy_skyclaw/sp_enemy_skyclaw.yy",},},
     {"id":{"name":"sp_hazard_rock_large","path":"sprites/sp_hazard_rock_large/sp_hazard_rock_large.yy",},},

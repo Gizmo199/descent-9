@@ -1,7 +1,7 @@
 function card_lifespan() : card_base() constructor {
 	
 	name = "Lifespan"
-	desc = "Gain +2 [sp_player_hp, 1]";
+	desc = "Gain +2 [sp_player_hp_token, 1]";
 	cost = [1, 0];
 	icon = sp_card_icon_health;
 	func = function(){

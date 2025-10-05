@@ -6,7 +6,7 @@
   "name":"cmp_movespeed",
   "parent":{
     "name":"Components",
-    "path":"folders/Scripts/ECS/Components.yy",
+    "path":"folders/ECS/Components.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

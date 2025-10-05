@@ -6,7 +6,7 @@
   "name":"card_catnip",
   "parent":{
     "name":"Health",
-    "path":"folders/Scripts/Cards/Health.yy",
+    "path":"folders/Cards/Health.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

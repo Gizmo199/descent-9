@@ -22,3 +22,6 @@ handr_y = skull_y;
 
 // Add components
 component_add(Component.LocalInput);
+
+// Destroy enemies
+with ( Enemy ) instance_destroy();

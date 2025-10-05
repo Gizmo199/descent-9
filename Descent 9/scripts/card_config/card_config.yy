@@ -6,7 +6,7 @@
   "name":"card_config",
   "parent":{
     "name":"Cards",
-    "path":"folders/Scripts/Cards.yy",
+    "path":"folders/Cards.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

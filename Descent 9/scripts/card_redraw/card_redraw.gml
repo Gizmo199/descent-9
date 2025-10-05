@@ -3,8 +3,9 @@ function card_redraw() : card_base() constructor {
 	name = "Redraw"
 	desc = "Redraw shop cards";
 	cost = [0, 0];
-	icon = sp_card_icon_environment;
+	icon = sp_card_icon_environment;	
 	func = function(){
+		with ( Spawner ) redraw = false;
 		with ( Shop ) 
 		{
 			state = shop_state_create_cards;
@@ -13,8 +14,7 @@ function card_redraw() : card_base() constructor {
 		}
 	}
 	odds = function(){
-		/// TODO :: Make only available once per wave
-		show_debug_message("TODO :: 'card_redraw' make available once per wave!");
+		with ( Spawner ) if ( !redraw ) return 0;
 		return 100;
 	}
 	

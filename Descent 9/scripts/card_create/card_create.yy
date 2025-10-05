@@ -6,7 +6,7 @@
   "name":"card_create",
   "parent":{
     "name":"System",
-    "path":"folders/Scripts/Cards/System.yy",
+    "path":"folders/Cards/System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

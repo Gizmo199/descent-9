@@ -6,3 +6,4 @@ with ( Entity )
 }
 array_foreach(cards, instance_destroy);
 music_play(msc_main, true);
+with ( Spawner ) alarm[0] = 30;

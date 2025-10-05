@@ -6,7 +6,7 @@
   "name":"card_redraw",
   "parent":{
     "name":"Environment",
-    "path":"folders/Scripts/Cards/Environment.yy",
+    "path":"folders/Cards/Environment.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

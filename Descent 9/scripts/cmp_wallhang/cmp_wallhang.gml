@@ -1,7 +1,6 @@
 function cmp_wallhang(e) : cmp_base(e) constructor {
 	
 	hanging = false;
-	
 	update = function(){
 		
 		hanging = false;

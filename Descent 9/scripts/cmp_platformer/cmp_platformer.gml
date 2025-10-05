@@ -131,7 +131,8 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 			if ( _midair )sprite_index = _airspr;
 			if ( _hanging && sign(_ix) != 0 ) image_xscale = -sign(_ix);
 			
-			
+			// Fell out of room? Damage us
+			if ( outside_room() ) component_add(Component.Damage);
 		}
 		
 	}

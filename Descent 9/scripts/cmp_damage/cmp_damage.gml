@@ -4,16 +4,17 @@ function cmp_damage(e) : cmp_base(e) constructor {
 	create = function(){
 		
 		var c = self;
+		with ( component_get(Component.Hurtbox, entity) ) on_damage();		
 		with ( component_get(Component.Health, entity) ) 
 		{
 			var h = self;
 			add(-c.amount);
-			with ( Player ) 
+			with ( entity ) 
 			{
 				// Died completely? Just restart the game
-				if ( c.entity == self && h.get() <= 0 )
+				if ( h.get() <= 0 )
 				{
-					room_goto(rm_menu);
+					instance_destroy();
 					return;
 				}
 			}

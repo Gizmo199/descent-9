@@ -1,3 +1,5 @@
+#macro DELTA ( delta_time / 1000000 )
+
 randomize();
 gpu_set_tex_filter(false);
 scribble_font_set_default("fnt_text");
@@ -9,6 +11,10 @@ global.emitter_music = audio_emitter_create();
 global.emitter_sfx = audio_emitter_create();
 audio_emitter_gain(global.emitter_music, 0);
 audio_emitter_gain(global.emitter_sfx, 0);
+
+global.settings = {
+	hurtbox : true	
+}
 
 room_goto_next();
 

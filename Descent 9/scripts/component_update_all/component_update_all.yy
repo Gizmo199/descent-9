@@ -6,7 +6,7 @@
   "name":"component_update_all",
   "parent":{
     "name":"Functions",
-    "path":"folders/Scripts/ECS/Functions.yy",
+    "path":"folders/ECS/Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

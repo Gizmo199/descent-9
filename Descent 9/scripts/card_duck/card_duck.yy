@@ -6,7 +6,7 @@
   "name":"card_duck",
   "parent":{
     "name":"Agility",
-    "path":"folders/Scripts/Cards/Agility.yy",
+    "path":"folders/Cards/Agility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

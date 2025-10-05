@@ -91,7 +91,7 @@ function cmp_health(e) : cmp_base(e) constructor {
 		static _sprite_width = sprite_get_width(sp_player_hp);	
 		static _sprite_height= sprite_get_height(sp_player_hp);
 		var _x = ( room_width/2 ) - ( _sprite_width * 0.5 * hp_max ) + _sprite_width/2;
-		var _y = 16;
+		var _y = 12;
 		var i = 0;
 		repeat(hp_max)
 		{

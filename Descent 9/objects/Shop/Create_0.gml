@@ -1,3 +1,4 @@
+event_inherited();
 with ( Player )
 {
 	component_deactivate_all();

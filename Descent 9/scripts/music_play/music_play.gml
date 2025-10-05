@@ -23,7 +23,7 @@ function music_play(_sound, _sync=false){
 	}
 	else _fade = 0;
 	
-	__music = audio_play_sound(_sound, 1, true, 0);
+	__music = audio_play_sound_on(global.emitter_music, _sound, true, 1, 0);
 	__track_position[$ __music] ??= 0;
 	audio_sound_set_track_position(__music, _trackpos);
 	audio_sound_gain(__music, 1, _fade);

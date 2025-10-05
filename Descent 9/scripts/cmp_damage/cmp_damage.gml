@@ -13,7 +13,8 @@ function cmp_damage(e) : cmp_base(e) constructor {
 				// Died completely? Just restart the game
 				if ( c.entity == self && h.get() <= 0 )
 				{
-					game_restart();
+					room_goto(rm_menu);
+					return;
 				}
 			}
 		}

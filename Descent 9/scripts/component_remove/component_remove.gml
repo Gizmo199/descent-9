@@ -4,6 +4,8 @@ function component_remove(_component, _entity=self){
 	{
 		var _removed = __entity_component_array[@ _component];
 		__entity_component_array[@ _component] = undefined;
+		
+		with ( _removed ) destroy();
 		return _removed;
 	}
 	return undefined;

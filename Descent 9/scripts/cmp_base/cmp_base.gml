@@ -13,6 +13,9 @@ function cmp_base(e) constructor {
 	///@func create()
 	create = function(){};
 	
+	///@func destroy()
+	destroy = function(){};
+	
 	///@func update()
 	update	= function(){};
 	

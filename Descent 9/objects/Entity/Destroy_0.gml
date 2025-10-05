@@ -1,0 +1,1 @@
+component_remove_all();

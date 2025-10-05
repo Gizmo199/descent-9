@@ -12,7 +12,7 @@ enum eCard {
 	Catnip,
 	Redraw,
 	Mezzanine,
-	ScratchingPost,
+	HighGround,
 	
 	Sizeof
 }
@@ -48,4 +48,4 @@ card_register(eCard.Naptime, card_naptime);
 card_register(eCard.Catnip, card_catnip);
 card_register(eCard.Redraw, card_redraw);
 card_register(eCard.Mezzanine, card_mezzanine);
-card_register(eCard.ScratchingPost, card_scratching_post);
+card_register(eCard.HighGround, card_high_ground);

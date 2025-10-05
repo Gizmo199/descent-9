@@ -1,7 +1,7 @@
-function card_scratching_post() : card_base() constructor {
+function card_high_ground() : card_base() constructor {
 	
 	incr = 1.5;
-	name = "Scratching Post"
+	name = "High Ground"
 	desc = "Increase height of mezzanines";
 	cost = [0, 0];
 	icon = sp_card_icon_environment;

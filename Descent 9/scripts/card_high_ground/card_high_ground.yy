@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"card_scratching_post",
+  "%Name":"card_high_ground",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"card_scratching_post",
+  "name":"card_high_ground",
   "parent":{
     "name":"Environment",
     "path":"folders/Cards/Environment.yy",

@@ -3,6 +3,7 @@ with ( Player )
 {
 	component_deactivate_all();
 	component_activate(Component.Health);
+	sprite_index = sp_player_die;
 }
 
 music_play(msc_menu, true);
@@ -19,10 +20,42 @@ handl_x = 0;
 handl_y = skull_y;
 handr_x = room_width;
 handr_y = skull_y;
+shake = 2;
 
 // Add components
 component_add(Component.LocalInput);
 
 // Destroy enemies
-with ( Enemy ) instance_destroy();
+draw_enemy = undefined;
+with ( Enemy )
+{
+	if ( global.enemy_damager == self ) 
+	{
+		other.draw_enemy = {
+			x : x,
+			y : y,
+			index : image_index,
+			sprite : sprite_index,
+			xscale : image_xscale,
+			timer : 30,
+			color : C_WHITE,
+			update : function(){
+				if ( timer && !--timer )
+				{
+					timer = 10;
+					if ( color == C_BLACK ) return true;
+					switch(color){
+						case C_WHITE : color = C_LTGRAY; break;
+						case C_LTGRAY: color = C_GRAY; break;
+						case C_GRAY : color = C_DKGRAY; break;
+						case C_DKGRAY : color = C_BLACK; break;
+					}
+					return false;
+				}
+			}
+		}
+	}
+	instance_destroy();
+}
 with ( HPToken ) instance_destroy();
+global.enemy_damager = undefined;

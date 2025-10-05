@@ -48,10 +48,11 @@ function shop_state_idle(){
 	{
 		selected = true;
 		var _x = x;
+		var _y = bbox_top - 8;
 		with ( Player )
 		{
 			var _float = dcos(current_time/10) * .1;
-			lerp_to_location(id, _x, y + _float, 0.1);
+			lerp_to_location(id, _x, _y + _float, 0.1);
 		}	
 	}
 	

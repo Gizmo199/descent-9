@@ -49,7 +49,6 @@ function shop_state_create_cards(){
 			if ( !lerp_to_location(id, x, (room_height/2) + 16, 0.3) ) _proceed = false;	
 		}
 	}
-
 	
 	// Continue?
 	if ( !_proceed ) return;

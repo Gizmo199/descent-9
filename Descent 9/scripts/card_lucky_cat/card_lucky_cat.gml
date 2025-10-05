@@ -1,7 +1,7 @@
 function card_lucky_cat() : card_base() constructor {
 	
 	name = "Lucky Cat"
-	desc = "Falling hazards have a 20% chance to drop +1 [sp_player_hp_token, 0] or [sp_player_hp_token, 1] token";
+	desc = "Falling hazards have a 10% chance to drop +1 [sp_player_hp_token, 0] or [sp_player_hp_token, 1] token";
 	cost = [1, 2];
 	icon = sp_card_icon_health;
 	func = function(){

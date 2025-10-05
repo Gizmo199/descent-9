@@ -1,7 +1,7 @@
 function card_duck() : card_base() constructor {
 	
 	name = "Duck"
-	desc = "While holding down while on platforms, you wont die. Halts progress";
+	desc = "Take no damage while holding down while on platforms. Halts wave progress";
 	cost = [0, 0];
 	icon = sp_card_icon_agility;
 	func = function(){

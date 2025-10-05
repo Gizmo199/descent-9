@@ -5,15 +5,16 @@ gpu_set_tex_filter(false);
 scribble_font_set_default("fnt_text");
 scribble_font_bake_outline_and_shadow("fnt_text", "fnt_text_outline", 1, 1, SCRIBBLE_OUTLINE.EIGHT_DIR, 1, false);
 scribble_font_bake_outline_and_shadow("fnt_title", "fnt_title_outline", 1, 1, SCRIBBLE_OUTLINE.EIGHT_DIR, 1, false);
-scribble_anim_wave(0.5, 1, 0.1);
+scribble_anim_wave(0.25, 1, 0.1);
 
+global.enemy_damager = undefined;
 global.emitter_music = audio_emitter_create();
 global.emitter_sfx = audio_emitter_create();
-audio_emitter_gain(global.emitter_music, 0);
-audio_emitter_gain(global.emitter_sfx, 0);
+//audio_emitter_gain(global.emitter_music, 0);
+//audio_emitter_gain(global.emitter_sfx, 0);
 
 global.settings = {
-	hurtbox : true	
+	hurtbox : false	
 }
 
 room_goto_next();

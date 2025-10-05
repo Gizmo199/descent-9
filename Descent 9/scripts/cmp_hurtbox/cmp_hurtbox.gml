@@ -4,7 +4,6 @@ function cmp_hurtbox(e) : cmp_base(e) constructor {
 	sprite = sp_player_hurtbox_big;
 	on_damage = function(){
 		var e = entity;
-		with ( component_get(Component.Duck, entity) ) if ( ducking ) return;	
 		with ( Player ) if ( self == e ) shop_create();
 	};
 	
@@ -57,6 +56,7 @@ function cmp_hurtbox(e) : cmp_base(e) constructor {
 	collide = function(_instance, _damage_struct){
 		///@func collide(instance)
 		if ( _instance == entity ) return false;
+		global.enemy_damager = _instance;
 		component_add(Component.Damage, _damage_struct, entity);
 		return true;
 	}

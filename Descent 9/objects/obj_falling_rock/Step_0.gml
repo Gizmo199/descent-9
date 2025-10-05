@@ -41,9 +41,11 @@ if ( place_meeting(x, y+vsp, Collider) )
 	if ( life > 0 ) 
 	{
 		while ( !place_meeting(x, y+1, Collider) ) y++;
-		var _in = id;
-		var _hb = instance_nearest(x, y, Hurtbox);
-		with ( _hb ) event_perform(ev_collision, _in);
+		if ( place_meeting(x, y, Hurtbox) )
+		{
+			var _hb = instance_nearest(x, y, Hurtbox);
+			on_collision(_hb);
+		}
 		
 		blink = true;
 		life--;

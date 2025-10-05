@@ -7,9 +7,6 @@ uniform float u_threshold;
 void main()
 {
     vec4 color = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
-	if ( color.r >= 0.9 )
-	{
-		color.rgb = u_color;
-	}
+	if ( color.r >= u_threshold ) color.rgb = u_color;
 	gl_FragColor = color;
 }

@@ -16,7 +16,7 @@ else
 
 if ( !blink )
 {
-	shader_set_red_replace(global.settings.hurtbox ? white : black);
+	shader_set_red_replace(global.settings.hurtbox ? white : black, 0.99);
 	draw_self();
 	shader_reset();
 }

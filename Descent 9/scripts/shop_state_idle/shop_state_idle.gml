@@ -12,7 +12,16 @@ function shop_state_idle(){
 	// Card selected
 	if ( _ip ) 
 	{
+		// Goto complete state
 		state = shop_state_complete;
+		
+		// Remove health costs
+		var _card = cards[selected];
+		with ( component_get(Component.Health, Player) ) apply_cost(-_card.cost[0], -_card.cost[1]);
+	
+		// Run selected card function
+		with ( cards[selected] ) func();
+		
 		return;
 	}
 	

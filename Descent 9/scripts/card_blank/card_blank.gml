@@ -6,6 +6,6 @@ function card_blank() : card_base() constructor {
 	cost = [0, 0];
 	func = function(){};
 	icon = undefined;
-	odds = function(){ return 100; }
+	odds = function(){ return 10; }
 	
 }

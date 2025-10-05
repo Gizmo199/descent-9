@@ -5,3 +5,4 @@ with ( Entity )
 	component_activate_all();
 }
 array_foreach(cards, instance_destroy);
+music_play(msc_main, true);

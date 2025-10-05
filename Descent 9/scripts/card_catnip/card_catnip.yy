@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_catnip",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_catnip",
+  "parent":{
+    "name":"Health",
+    "path":"folders/Scripts/Cards/Health.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

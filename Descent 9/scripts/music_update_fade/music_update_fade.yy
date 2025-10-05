@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"music_update_fade",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"music_update_fade",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

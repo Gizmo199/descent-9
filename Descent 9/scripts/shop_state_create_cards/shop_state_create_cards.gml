@@ -9,15 +9,24 @@ function shop_state_create_cards(){
 							
 		// Create cards
 		var _stored = [];
+		var _forced = [];
+		array_copy(_forced, 0, global.__card_forced, 0, array_length(global.__card_forced));
 		repeat(_n)
 		{
-			// Pull card
-			var _new_card = array_get_weighted(global.__card_pool, global.__card_weights, true);
-			while ( global.__card_limits[@ _new_card] && array_contains(_stored, _new_card) )
+			if ( array_length(_forced) <= 0 ) 
 			{
-				_new_card = array_get_weighted(global.__card_pool, global.__card_weights, true);
-			}			
-			array_push(_stored, _new_card);
+				// Pull card
+				var _new_card = array_get_weighted(global.__card_pool, global.__card_weights, true);
+				while ( global.__card_limits[@ _new_card] && array_contains(_stored, _new_card) )
+				{
+					_new_card = array_get_weighted(global.__card_pool, global.__card_weights, true);
+				}			
+				array_push(_stored, _new_card);
+			}
+			else
+			{
+				var _new_card = array_pop(_forced);	
+			}
 			
 			// Create card
 			array_push(cards, card_create(_x, _new_card));

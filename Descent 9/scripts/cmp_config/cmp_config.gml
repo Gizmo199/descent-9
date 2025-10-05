@@ -4,6 +4,8 @@ enum Component {
 	LocalInput,
 	DoubleJump,
 	Platformer,
+	Duck,
+	Naptime,
 	WallHang,
 	MoveSpeed,
 	JumpSpeed,
@@ -22,7 +24,8 @@ component_define(Component.Damage, cmp_damage);
 component_define(Component.LocalInput, cmp_localinput);
 component_define(Component.DoubleJump, cmp_doublejump);
 component_define(Component.Platformer, cmp_platformer);
+component_define(Component.Duck, cmp_duck);
 component_define(Component.WallHang, cmp_wallhang);
 component_define(Component.MoveSpeed, cmp_movespeed);
 component_define(Component.JumpSpeed, cmp_jumpspeed);
-
+component_define(Component.Naptime, cmp_naptime);

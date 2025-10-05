@@ -4,6 +4,8 @@ with ( Player )
 	component_activate(Component.Health);
 }
 
+music_play(msc_menu, true);
+
 cards = [];
 state = shop_state_init;
 timer = 1;

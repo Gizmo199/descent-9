@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_duck",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_duck",
+  "parent":{
+    "name":"Agility",
+    "path":"folders/Scripts/Cards/Agility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

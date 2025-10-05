@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_double_jump",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_double_jump",
+  "parent":{
+    "name":"Agility",
+    "path":"folders/Scripts/Cards/Agility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

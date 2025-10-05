@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"card_extended_stay",
+  "%Name":"cmp_duck",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"card_extended_stay",
+  "name":"cmp_duck",
   "parent":{
-    "name":"Health",
-    "path":"folders/Scripts/Cards/Health.yy",
+    "name":"Components",
+    "path":"folders/Scripts/ECS/Components.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

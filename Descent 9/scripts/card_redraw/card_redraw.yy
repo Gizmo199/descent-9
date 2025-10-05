@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"card_kitty_physics",
+  "%Name":"card_redraw",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"card_kitty_physics",
+  "name":"card_redraw",
   "parent":{
-    "name":"Agility",
-    "path":"folders/Scripts/Cards/Agility.yy",
+    "name":"Environment",
+    "path":"folders/Scripts/Cards/Environment.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

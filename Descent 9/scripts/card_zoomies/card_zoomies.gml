@@ -2,7 +2,7 @@ function card_zoomies() : card_base() constructor {
 	
 	name = "Zoomies"
 	desc = "Increase move speed";
-	cost = [0, 1];
+	cost = [0, 0];
 	icon = sp_card_icon_agility;
 	func = function(){
 		with ( Player ) component_add(Component.MoveSpeed);

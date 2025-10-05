@@ -35,13 +35,7 @@ function shop_state_complete(){
 
 	// Complete
 	if ( !complete ) return;
-	
-	// Remove health costs
-	with ( component_get(Component.Health, Player) ) apply_cost(-_card.cost[0], -_card.cost[1]);
-	
-	// Run selected card function
-	with ( cards[selected] ) func();
-	
+
 	// Destroy shop
 	instance_destroy();
 	

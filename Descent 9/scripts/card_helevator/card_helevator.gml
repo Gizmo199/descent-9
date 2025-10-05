@@ -2,7 +2,7 @@ function card_helevator() : card_base() constructor {
 	
 	name = "Hellevator"
 	desc = "Adds another hellevator platform";
-	cost = [0, 2];
+	cost = [0, 1];
 	icon = sp_card_icon_environment;
 	func = function(){
 		var _offset = room_width/3;

@@ -21,6 +21,32 @@ function shop_state_init(){
 	var _x = room_width/2;
 	var _y = room_height/2;	
 	if ( !lerp_to_location(Player, _x, _y - 16, 0.1) ) return;
+	
+	// Lose?
+	var _this = self;
+	with ( component_get(Component.Health, Player) )
+	{
+		if ( get() <= 0 )
+		{
+			_this.win = false;
+			_this.state = shop_state_create_end_screen;
+			highlight_cost(0, get_max());
+			return;
+		}
+	}
+	
+	// Win?
+	with ( Spawner )
+	{
+		if ( wave >= wave_count-1 ) 
+		{
+			_this.win = true;
+			_this.state = shop_state_create_end_screen;
+			return;
+		}
+	}	
+	
+	// Normal shop
 	state = shop_state_create_cards;
 	
 }

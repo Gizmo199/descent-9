@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_blip",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.46154195,
+  "name":"snd_blip",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Audio/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_blip.ogg",
+  "type":1,
+  "volume":1.0,
+}

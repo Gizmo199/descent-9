@@ -25,12 +25,12 @@ var _total = 1;
 var _number = instance_number(object_index) - 1;
 var _wave = 0;
 with ( Spawner ) _wave = wave;
-if ( _wave > 3 ) _total = 2;
-if ( _wave > 6 ) _total = 3;
+if ( _wave > 1 ) _total = 2;
+if ( _wave > 3 ) _total = 3;
 if ( _number >= _total ) 
 {
 	instance_destroy();
-	with ( Spawner ) alarm[0] = 1;
+	exit;
 }
 
 super_on_collision = on_collision;
@@ -40,4 +40,11 @@ on_collision = function(_instance){
 		if ( ducking ) return;
 	}
 	super_on_collision(_instance);
+}
+
+// Make sure rocks cannot spawn on top of one another
+while ( place_meeting(x, y, object_index) )
+{
+	x++;
+	if ( x > room_width ) x = 0;
 }

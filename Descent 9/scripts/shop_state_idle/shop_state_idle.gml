@@ -21,7 +21,8 @@ function shop_state_idle(){
 	
 		// Run selected card function
 		with ( cards[selected] ) func();
-		
+		sfx_play(snd_blip);
+		sfx_play(choose(snd_spend_01, snd_spend_02));
 		return;
 	}
 	
@@ -33,6 +34,7 @@ function shop_state_idle(){
 		
 		if ( _sel != selected )
 		{
+			sfx_play(snd_flick);
 			var _card = cards[selected];
 			with ( component_get(Component.Health, Player) ) 
 			{

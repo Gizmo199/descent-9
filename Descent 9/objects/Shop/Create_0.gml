@@ -5,9 +5,10 @@ with ( Player )
 	component_activate(Component.Health);
 	sprite_index = sp_player_die;
 }
-
+sfx_play(snd_die);
 music_play(msc_menu, true);
 
+win = true;
 cards = [];
 state = shop_state_init;
 timer = 1;
@@ -21,6 +22,8 @@ handl_y = skull_y;
 handr_x = room_width;
 handr_y = skull_y;
 shake = 2;
+fadeout = false;
+fade = 0;
 
 // Add components
 component_add(Component.LocalInput);

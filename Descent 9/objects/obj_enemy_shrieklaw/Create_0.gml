@@ -1,5 +1,5 @@
 event_inherited();
-if ( instance_number(object_index) > 2 )
+if ( instance_number(object_index) > 3 )
 {
 	instance_destroy();
 	exit;
@@ -22,4 +22,8 @@ with ( Player )
 
 // reset collision function to do nothing
 wait_time = 30;
+with ( Spawner ) 
+{
+	if ( wave > 3 ) other.wait_time = 20;	
+}
 wait = wait_time;

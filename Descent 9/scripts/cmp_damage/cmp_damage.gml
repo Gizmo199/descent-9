@@ -15,15 +15,15 @@ function cmp_damage(e) : cmp_base(e) constructor {
 		{
 			var h = self;
 			add(-c.amount);
-			with ( entity ) 
-			{
-				// Died completely? Just restart the game
-				if ( h.get() <= 0 )
-				{
-					instance_destroy();
-					return;
-				}
-			}
+			//with ( entity ) 
+			//{
+			//	// Died completely? Just restart the game
+			//	if ( h.get() <= 0 )
+			//	{
+			//		instance_destroy();
+			//		return;
+			//	}
+			//}
 		}
 		component_remove(Component.Damage, entity);		
 		

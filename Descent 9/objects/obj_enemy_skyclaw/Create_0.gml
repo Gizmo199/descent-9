@@ -13,10 +13,10 @@ intro = true;
 wait = 30;
 
 var _total = instance_number(object_index);
-if( _total > 3 ) 
+if( _total > 2 ) 
 {
 	instance_destroy();
-	with ( Spawner ) alarm[0] = 1;
+	exit;
 }
 
 var _wave = 0;
@@ -32,8 +32,8 @@ switch(_wave)
 		wait = 10;
 		angle_spd *= 1.5;
 		break;
-	case 6 : 
 	default:
+	case 6 : 
 		wait = 0;
 		angle_spd *= 2;
 		break;

@@ -88,7 +88,7 @@ if ( place_meeting(x, y+vsp, Collider) )
 			{
 				_numb = 0;
 			}
-			else if ( _wave < 4 ) {
+			if ( _wave > 1 && _wave < 5 ) {
 				_numb = 1;
 				with ( Player ) 
 				{
@@ -96,6 +96,7 @@ if ( place_meeting(x, y+vsp, Collider) )
 					else _left = choose(false, false, true);
 				}
 			}
+			
 			repeat(_numb)
 			{
 				with ( instance_create_layer(x, y, layer, object_index, {

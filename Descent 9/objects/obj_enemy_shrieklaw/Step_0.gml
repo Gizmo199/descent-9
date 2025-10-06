@@ -16,12 +16,24 @@ else
 	if ( --wait > 0 ) 
 	{
 		x = dest_x;
-		y = dest_y + dcos(current_time*10);
+		y = dest_y + dcos(current_time*4);
 		return;
 	}
+	
+	var _this = self;
+	if ( journey > 0 )
+	{
+		with ( instance_create_layer(x, y, layer, obj_enemy_shriek, {
+			handler : _this	
+		}) ) 
+		{
+			other.shriek = self;
+			with ( Spawner ) other.radius += wave * 2;	
+		}
+	}
+	
 	y = dest_y;
 	wait = wait_time;
-	var _this = self;
 	journey--;
 	if ( journey > 0 )
 	{
@@ -37,11 +49,4 @@ else
 		dest_y = ystart;
 	}
 	else if ( journey < 0 ) instance_destroy();
-	else with ( instance_create_layer(x, y, layer, obj_enemy_shriek, {
-		handler : _this	
-	}) ) 
-	{
-		other.shriek = self;
-		with ( Spawner ) other.radius += wave * 2;	
-	}
 }

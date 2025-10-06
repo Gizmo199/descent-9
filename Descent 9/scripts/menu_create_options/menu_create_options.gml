@@ -88,6 +88,25 @@ function menu_create_options(){
 			return menu_scribble($"Sfx : {round(_gain*100)}%", _selected);
 		},
 		function(_selected, _pressed){
+			static _timer = 1;
+			if ( _selected ) 
+			{
+				var _ix = ( keyboard_check(vk_right) - keyboard_check(vk_left) );
+				
+				if ( sign(_ix) != 0 )
+				{
+					if ( _timer && !--_timer ) 
+					{
+						_timer = 12;
+						global.settings.wave += _ix;
+						global.settings.wave = clamp(global.settings.wave, 3, 9);
+						sfx_play(snd_blip);
+					}
+				} else _timer = 1;				
+			}
+			return menu_scribble($"Waves : {global.settings.wave}", _selected);
+		},
+		function(_selected, _pressed){
 			if ( _selected && _pressed ) 
 			{
 				sfx_play(snd_blip);
@@ -99,7 +118,7 @@ function menu_create_options(){
 		
 	];
 	music_play(msc_menu);
-	if ( os_browser != browser_not_a_browser ) array_shift(_menu);
+	if ( os_browser != browser_not_a_browser || os_get_config() == "HTML" ) array_shift(_menu);
 	return instance_create_layer(0, 0, layer, Menu, {
 		
 		fade : 0,

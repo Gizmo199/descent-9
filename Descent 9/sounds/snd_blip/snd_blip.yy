@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.46154195,
+  "duration":0.115011334,
   "name":"snd_blip",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_blip.ogg",
+  "soundFile":"snd_blip.wav",
   "type":1,
-  "volume":1.0,
+  "volume":0.3,
 }

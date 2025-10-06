@@ -40,6 +40,8 @@ function shop_state_init(){
 	{
 		if ( wave >= wave_count-1 ) 
 		{
+			music_play(undefined);
+			sfx_play(snd_combat);
 			_this.win = true;
 			_this.state = shop_state_create_end_screen;
 			return;

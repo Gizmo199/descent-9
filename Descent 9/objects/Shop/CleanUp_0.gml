@@ -6,5 +6,5 @@ with ( Entity )
 	component_activate_all();
 }
 array_foreach(cards, instance_destroy);
-music_play(msc_main, true);
+if ( !fadeout ) music_play(msc_main, true);
 with ( Spawner ) alarm[0] = 30;

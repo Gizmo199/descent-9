@@ -37,10 +37,12 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 				{
 					count  = 0;
 					c.vspeed = -c.get_jumpspeed();	
+					sfx_play(snd_jump_02);
 				}
 			}
 			return;
 		}
+		sfx_play(snd_jump_01);
 		vspeed = -get_jumpspeed();
 		coyote_time = 0;
 		

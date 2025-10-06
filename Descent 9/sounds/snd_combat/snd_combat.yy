@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":6.3124943,
+  "duration":8.939501,
   "name":"snd_combat",
   "parent":{
     "name":"Sounds",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_combat.ogg",
   "type":1,
-  "volume":1.0,
+  "volume":0.5,
 }

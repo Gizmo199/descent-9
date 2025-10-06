@@ -24,7 +24,7 @@ function menu_create_main(_fade=1){
 		}
 	];
 	music_play(msc_menu);
-	if ( os_browser != browser_not_a_browser ) array_pop(_menu);
+	if ( os_browser != browser_not_a_browser || os_get_config() == "HTML" ) array_pop(_menu);
 	return instance_create_layer(0, 0, layer, Menu, {
 		
 		fade : _fade,

@@ -13,7 +13,13 @@ intro = true;
 wait = 30;
 
 var _total = instance_number(object_index);
-if( _total > 2 ) 
+var _max = 2;
+var _wave = 0;
+with ( Spawner ) _wave = wave;
+if ( _wave > 4 ) _max = 3;
+if ( _wave > 6 ) _max = 5;
+if ( _wave > 8 ) _max = 10;
+if( _total > _max ) 
 {
 	instance_destroy();
 	exit;

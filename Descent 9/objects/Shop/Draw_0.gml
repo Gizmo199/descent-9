@@ -4,17 +4,24 @@ draw_sprite_tiled(sp_background_shop, 0, 0, current_time/60);
 // Draw enemy
 if ( draw_enemy != undefined )
 {
-	var _remove = draw_enemy.update();
-	var _color = [
-		color_get_red(draw_enemy.color)/255,
-		color_get_green(draw_enemy.color)/255,
-		color_get_blue(draw_enemy.color)/255
-	];
-	shader_set_red_replace(_color, 0.5);
-	draw_sprite_ext(draw_enemy.sprite, draw_enemy.index, draw_enemy.x, draw_enemy.y, draw_enemy.xscale, 1, 0, c_white, 1);	
-	shader_reset();
+	try 
+	{
+		var _remove = draw_enemy.update();
+		var _color = [
+			color_get_red(draw_enemy.color)/255,
+			color_get_green(draw_enemy.color)/255,
+			color_get_blue(draw_enemy.color)/255
+		];
+		shader_set_red_replace(_color, 0.5);
+		draw_sprite_ext(draw_enemy.sprite, draw_enemy.index, draw_enemy.x, draw_enemy.y, draw_enemy.xscale, 1, 0, c_white, 1);	
+		shader_reset();
 	
-	if ( _remove ) draw_enemy = undefined;
+		if ( _remove ) draw_enemy = undefined;
+	}
+	catch(e)
+	{
+		draw_enemy = undefined;	
+	}
 }
 
 // Wait for shake to stop

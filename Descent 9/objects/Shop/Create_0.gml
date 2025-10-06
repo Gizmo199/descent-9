@@ -5,8 +5,18 @@ with ( Player )
 	component_activate(Component.Health);
 	sprite_index = sp_player_die;
 }
-sfx_play(snd_die);
 music_play(msc_menu, true);
+
+var _sfx = snd_die;
+with ( component_get(Component.Health, Player) )
+{
+	if ( get() <= 1 )
+	{
+		_sfx = snd_game_lose;
+		music_play(undefined);
+	}
+}
+sfx_play(_sfx);
 
 win = true;
 cards = [];

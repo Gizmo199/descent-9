@@ -52,6 +52,7 @@ if ( place_meeting(x, y+vsp, Collider) )
 		vsp *= -res;
 		y += vsp;
 		if ( _wave > 2 && sprite_index = sp_hazard_rock_large ) blink = false;
+		sfx_play(sprite_index == sp_hazard_rock_large ? snd_hit_01 : snd_hit_02);
 	}
 	else
 	{

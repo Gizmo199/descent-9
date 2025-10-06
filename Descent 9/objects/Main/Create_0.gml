@@ -12,6 +12,7 @@ global.enemy_damager = undefined;
 global.emitter_music = audio_emitter_create();
 global.emitter_sfx = audio_emitter_create();
 global.settings = { 
+	wave : 6,
 	fullscreen : false,
 	hurtbox : false	
 }

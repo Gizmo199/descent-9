@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_game_lose",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.6048753,
+  "name":"snd_game_lose",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Audio/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_game_lose.wav",
+  "type":0,
+  "volume":0.6,
+}

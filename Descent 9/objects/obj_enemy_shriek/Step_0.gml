@@ -1,3 +1,12 @@
+with ( handler )
+{
+	other.sprite_index = sprite_index;
+	other.image_index = image_index;
+	other.image_xscale = image_xscale;
+	other.x = x;
+	other.y = y;
+}
+
 var _timer = 2;
 if ( radius < radius_max ) 
 {
@@ -22,12 +31,4 @@ if ( radius > 12 )
 			other.on_collision(self);	
 		}
 	}
-}
-with ( handler )
-{
-	other.sprite_index = sprite_index;
-	other.image_index = image_index;
-	other.image_xscale = image_xscale;
-	other.x = x;
-	other.y = y;
 }

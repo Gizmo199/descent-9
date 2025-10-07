@@ -12,6 +12,7 @@
     {"name":"Components","order":1,"path":"folders/ECS/Components.yy",},
     {"name":"Functions","order":2,"path":"folders/ECS/Functions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
+    {"name":"Patchnotes","order":10,"path":"folders/Patchnotes.yy",},
     {"name":"Objects","order":4,"path":"folders/Objects.yy",},
     {"name":"Enemies","order":1,"path":"folders/Objects/Enemies.yy",},
     {"name":"Environment","order":3,"path":"folders/Objects/Environment.yy",},
@@ -43,9 +44,9 @@
     {"name":"Cards","order":5,"path":"folders/Sprites/Cards.yy",},
     {"name":"Colliders","order":1,"path":"folders/Sprites/Colliders.yy",},
     {"name":"Enemies and Hazards","order":6,"path":"folders/Sprites/Enemies and Hazards.yy",},
-    {"name":"UI & Effects","order":7,"path":"folders/Sprites/UI & Effects.yy",},
     {"name":"Platform","order":2,"path":"folders/Sprites/Platform.yy",},
     {"name":"Player","order":4,"path":"folders/Sprites/Player.yy",},
+    {"name":"UI & Effects","order":7,"path":"folders/Sprites/UI & Effects.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_text","order":2,"path":"fonts/fnt_text/fnt_text.yy",},

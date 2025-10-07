@@ -2,15 +2,15 @@ function shop_state_complete(){
 	
 	var _x = room_width/2;
 	var _y = 48;
-	//with ( Platform ) 
-	//{
-	//	_x = x;
-	//	_y = min(_y, y - 32);
-	//	break;
-	//}
+	 
+	with ( platform ) 
+	{
+		_x = x;
+		_y = min(_y, y - 32);
+	}
 	
 	// Move player to location
-	if ( !lerp_to_location(Player, _x, _y, 0.3) ) return;
+	if ( !lerp_to_location(Player, _x, _y, 0.2) ) return;
 	
 	// Update card locations
 	var i = 0;

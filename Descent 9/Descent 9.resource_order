@@ -1,8 +1,8 @@
 {
   "FolderOrderSettings":[
     {"name":"Audio","order":8,"path":"folders/Audio.yy",},
-    {"name":"Sounds","order":2,"path":"folders/Audio/Sounds.yy",},
     {"name":"Music","order":1,"path":"folders/Audio/Music.yy",},
+    {"name":"Sounds","order":2,"path":"folders/Audio/Sounds.yy",},
     {"name":"Cards","order":2,"path":"folders/Cards.yy",},
     {"name":"Agility","order":12,"path":"folders/Cards/Agility.yy",},
     {"name":"Environment","order":13,"path":"folders/Cards/Environment.yy",},

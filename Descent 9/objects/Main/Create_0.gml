@@ -16,5 +16,7 @@ global.settings = {
 	fullscreen : false,
 	hurtbox : false	
 }
+audio_emitter_gain(global.emitter_music, 0.5);
+audio_emitter_gain(global.emitter_sfx, 0.5);
 
 room_goto_next();

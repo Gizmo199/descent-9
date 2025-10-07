@@ -10,7 +10,7 @@ if ( alpha < 1 )
 if ( --wait > 0 ) wait = 0;
 x = dest_x;
 y = dest_y;
-dest_y+=2;
+dest_y++;
 
 if ( timer && !--timer )
 {
@@ -19,7 +19,7 @@ if ( timer && !--timer )
 	var _inst = instance_create_layer(x + _offset, y, layer, obj_enemy_arrow);
 	_inst.hspeed = image_xscale * 4;
 	_inst.image_xscale = sign(_inst.hspeed);
-	timer = 15;
+	timer = 20;
 }
 
 if ( y > room_height ) 

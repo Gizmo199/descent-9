@@ -23,6 +23,9 @@ function shop_state_idle(){
 		with ( cards[selected] ) func();
 		sfx_play(snd_blip);
 		sfx_play(choose(snd_spend_01, snd_spend_02));
+		
+		// Select which platform to make player hover to
+		platform = instance_find(Platform, irandom(instance_number(Platform)-1));
 		return;
 	}
 	

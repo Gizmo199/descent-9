@@ -34,6 +34,7 @@ handr_y = skull_y;
 shake = 2;
 fadeout = false;
 fade = 0;
+platform = Platform;
 
 // Add components
 component_add(Component.LocalInput);

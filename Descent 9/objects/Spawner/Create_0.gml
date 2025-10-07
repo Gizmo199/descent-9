@@ -9,7 +9,6 @@ wave_enemy =
 	[obj_enemy_skyclaw, obj_enemy_shrieklaw],
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw],
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death],
-	
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death],
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death],
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death],

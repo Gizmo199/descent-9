@@ -1,9 +1,14 @@
 function cmp_health(e) : cmp_base(e) constructor {
 	
-	hp = 1;
-	hp_max = 1;
+	hp = 9;
+	hp_max = 9;
 	highlight = [];
 	highlight_both = [];
+	highlight_pos = [];
+	effect = [undefined, undefined];
+	
+	draw_hp = hp;
+	draw_max = hp_max;
 	
 	static get = function(){
 		///@func get()
@@ -15,11 +20,17 @@ function cmp_health(e) : cmp_base(e) constructor {
 	}
 	static set = function(_value){
 		///@func set(value)
+		var _hp = hp;
 		hp = _value;
+		if ( hp > _hp ) effect[0] ??= 1;
+		if ( hp < _hp ) effect[0] ??= 0;
 	}
 	static set_max = function(_value){
 		///@func set_max(value)
+		var _max = hp_max;
 		hp_max = _value;
+		if ( hp_max > _max ) effect[1] ??= 1;
+		if ( hp_max < _max ) effect[1] ??= 0;
 	}
 	static add = function(_value){
 		///@func add(value)
@@ -39,6 +50,7 @@ function cmp_health(e) : cmp_base(e) constructor {
 		/// @func highlight_update_array()
 		while ( array_length(highlight) < hp_max ) array_push(highlight, false);
 		while ( array_length(highlight_both) < hp_max ) array_push(highlight_both, false);
+		while ( array_length(highlight_pos) < hp_max ) array_push(highlight_pos, { x : undefined, y : undefined });
 	}
 	static highlight_set = function(_number, _value){
 		///@func highlight_set(hp_number, value)
@@ -90,15 +102,15 @@ function cmp_health(e) : cmp_base(e) constructor {
 	
 		static _sprite_width = sprite_get_width(sp_player_hp);	
 		static _sprite_height= sprite_get_height(sp_player_hp);
-		var _x = ( room_width/2 ) - ( _sprite_width * 0.5 * hp_max ) + _sprite_width/2;
+		var _x = ( room_width/2 ) - ( _sprite_width * 0.5 * draw_max ) + _sprite_width/2;
 		var _y = 12;
 		var i = 0;
-		repeat(hp_max)
+		repeat(draw_max)
 		{
-			var _index = ( i >= hp );
+			var _index = ( i >= draw_hp );
 			var _drawboth = highlight_both[i];
 			var _sprite = ( highlight[i] ? sp_player_hp_highlight : sp_player_hp );
-			
+						
 			var xx = _x;
 			var yy = _y;
 			if ( _sprite = sp_player_hp_highlight )
@@ -107,11 +119,56 @@ function cmp_health(e) : cmp_base(e) constructor {
 				yy += random_range(-0.25, 0.25);
 			}
 			
-			draw_sprite(_sprite, _index, xx, yy);
-			if ( _drawboth ) draw_sprite(_sprite, !_index, xx, yy + _sprite_height/2);
+			// Create hp effects
+			var _min = draw_hp;
+			var _max = _min + ( hp - draw_hp );
+			if ( _min > _max )
+			{
+				var _swp = _max;
+				_max = _min;
+				_min = _swp;
+			}
+			if (( i >= _min && i < _max ) && effect[0] != undefined )
+			{
+				if ( effect[0] ) instance_create_layer(xx, yy, "Effects", Effect, { image_blend : C_WHITE });
+				else instance_create_layer(xx, yy, "Effects", Effect, { bad : true, image_blend : C_WHITE });
+			}
+			
+			// Create maxhp effects
+			var _min = draw_max;
+			var _max = _min + ( hp_max - draw_max );
+			if ( _min > _max )
+			{
+				var _swp = _max;
+				_max = _min;
+				_min = _swp;
+			}
+			if (( i >= _min && i < _max ) && effect[1] != undefined )
+			{
+				if ( effect[1] ) instance_create_layer(xx, yy, "Effects", Effect, { image_blend : C_RED });
+				else instance_create_layer(xx, yy, "Effects", Effect, { bad : true, image_blend : C_RED });
+			}
+			
+			var _pos = highlight_pos[i];
+			_pos.x ??= xx;
+			_pos.y ??= -12;
+			_pos.x = lerp(_pos.x, xx, 0.2);
+			if ( abs(_pos.x - xx) < 1 ) _pos.x = xx;
+			if ( _pos.x == xx ) _pos.y = lerp(_pos.y, yy, 0.2);
+			
+			draw_sprite(_sprite, _index, _pos.x, _pos.y);
+			if ( _drawboth ) draw_sprite(_sprite, !_index, _pos.x, _pos.y + _sprite_height/2);
 			_x += _sprite_width;
 			i++;
 		}
+		
+		// Reset effects
+		effect[0] = undefined;
+		effect[1] = undefined;
+		
+		if ( instance_exists(Effect) ) return;
+		draw_max = hp_max;
+		draw_hp = hp;
 		
 	}
 }

@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"Mezzanine",
+  "%Name":"Effect",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Mezzanine",
+  "name":"Effect",
   "overriddenProperties":[],
   "parent":{
-    "name":"Environment",
-    "path":"folders/Objects/Environment.yy",
+    "name":"System",
+    "path":"folders/Objects/System.yy",
   },
-  "parentObjectId":{
-    "name":"Collider",
-    "path":"objects/Collider/Collider.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sp_platform_mezzanine",
-    "path":"sprites/sp_platform_mezzanine/sp_platform_mezzanine.yy",
+    "name":"sp_effect_circle",
+    "path":"sprites/sp_effect_circle/sp_effect_circle.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -1,5 +1,6 @@
 instance_define(id, "fade", 0);
 instance_define(id, "title", "Mittens Descent");
+instance_define(id, "is_main", false);
 fade_to_play = false;
 
 wait = 30;

@@ -1,6 +1,6 @@
 with ( platform ) 
 {
-	other.image_xscale = image_xscale - 0.25;
+	other.image_xscale = image_xscale;
 	other.x = x;
 	other.y = y;
 }

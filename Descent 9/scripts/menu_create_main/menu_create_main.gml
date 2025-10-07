@@ -27,6 +27,8 @@ function menu_create_main(_fade=1){
 	if ( os_browser != browser_not_a_browser || os_get_config() == "HTML" ) array_pop(_menu);
 	return instance_create_layer(0, 0, layer, Menu, {
 		
+		is_main : true,
+		title: "[scale, 1][sp_title, 0]",
 		fade : _fade,
 		menu : _menu,
 		

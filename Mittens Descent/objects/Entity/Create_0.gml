@@ -1,0 +1,1 @@
+struct_set_from_hash(self, global.__component_hash, array_create(Component.Sizeof, undefined));

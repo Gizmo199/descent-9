@@ -1,0 +1,1 @@
+component_update_all();

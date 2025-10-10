@@ -1,0 +1,8 @@
+- [Fixed] mezzanine positioning
+- [Fixed] player spawns over platforms now
+- [Fixed] Audio now starts at 50% volume
+- [Fixed] 'Death' enemy is a bit more challenging
+- [Added] Main menu logo
+- [Added] Effect feedback when getting HP tokens
+- [Added] Effect feedback on HP UI when losing or gaining tokens
+- [Added] Effect feedback and sound when colliding with tokens

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmp_platformer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmp_platformer",
+  "parent":{
+    "name":"Components",
+    "path":"folders/ECS/Components.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

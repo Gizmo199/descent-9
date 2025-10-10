@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_landing_pad",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_landing_pad",
+  "parent":{
+    "name":"Environment",
+    "path":"folders/Cards/Environment.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmp_naptime",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmp_naptime",
+  "parent":{
+    "name":"Components",
+    "path":"folders/ECS/Components.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

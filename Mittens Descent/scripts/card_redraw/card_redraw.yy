@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_redraw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_redraw",
+  "parent":{
+    "name":"Environment",
+    "path":"folders/Cards/Environment.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

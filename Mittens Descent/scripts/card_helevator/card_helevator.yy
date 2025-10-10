@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_helevator",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_helevator",
+  "parent":{
+    "name":"Environment",
+    "path":"folders/Cards/Environment.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_naptime",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_naptime",
+  "parent":{
+    "name":"Health",
+    "path":"folders/Cards/Health.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

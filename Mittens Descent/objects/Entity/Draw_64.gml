@@ -1,0 +1,1 @@
+component_draw_gui_all();

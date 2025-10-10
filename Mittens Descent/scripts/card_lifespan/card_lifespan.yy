@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_lifespan",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_lifespan",
+  "parent":{
+    "name":"Health",
+    "path":"folders/Cards/Health.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

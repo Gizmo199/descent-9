@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_bird_catcher",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_bird_catcher",
+  "parent":{
+    "name":"Agility",
+    "path":"folders/Cards/Agility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

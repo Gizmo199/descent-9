@@ -1,0 +1,1 @@
+instance_define(id, "platform", undefined);

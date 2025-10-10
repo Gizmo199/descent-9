@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmp_config",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmp_config",
+  "parent":{
+    "name":"ECS",
+    "path":"folders/ECS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

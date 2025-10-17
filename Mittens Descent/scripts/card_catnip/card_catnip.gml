@@ -4,6 +4,7 @@ function card_catnip() : card_base() constructor {
 	desc = "Regain full [sp_player_hp_token, 0]";
 	cost = [0, 2];
 	icon = sp_card_icon_health;
+	index = 2;
 	func = function(){
 		with ( component_get(Component.Health, Player) ) add(100);
 	}

@@ -12,7 +12,7 @@ function cmp_shield(e) : cmp_base(e) constructor {
 	update = function(){
 		
 		if ( used ) return;
-		time += DELTA;
+		time += delta;
 		if ( time >= time_max ) used = true;
 		
 	}

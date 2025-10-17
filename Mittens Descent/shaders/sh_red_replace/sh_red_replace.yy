@@ -4,7 +4,7 @@
   "name":"sh_red_replace",
   "parent":{
     "name":"Shaders",
-    "path":"folders/Shaders.yy",
+    "path":"folders/Core/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

@@ -1,9 +1,10 @@
 function card_duck() : card_base() constructor {
 	
 	name = "Duck"
-	desc = "Invincible from [c_red]falling hazards[c_white] damage while holding down on platforms. Halts wave progress";
+	desc = "Invincible from [c_red]falling hazard[c_white] damage while holding [sp_player_control_keys, 3] on platforms. Halts wave progress";
 	cost = [0, 0];
 	icon = sp_card_icon_agility;
+	index = 3;
 	func = function(){
 		with ( Player ) component_add(Component.Duck);
 	}

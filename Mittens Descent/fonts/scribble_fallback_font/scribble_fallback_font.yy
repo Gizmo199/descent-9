@@ -120,7 +120,7 @@
   "name":"scribble_fallback_font",
   "parent":{
     "name":"(System - don't call these functions)",
-    "path":"folders/Scripts/Scribble/(System - don't call these functions).yy",
+    "path":"folders/Core/Scribble/(System - don't call these functions).yy",
   },
   "pointRounding":0,
   "ranges":[
@@ -134,7 +134,10 @@
   "sdfSpread":8,
   "size":11.0,
   "styleName":"Regular",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }

@@ -6,7 +6,7 @@
   "name":"component_draw_gui",
   "parent":{
     "name":"Functions",
-    "path":"folders/ECS/Functions.yy",
+    "path":"folders/Core/ECS/Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

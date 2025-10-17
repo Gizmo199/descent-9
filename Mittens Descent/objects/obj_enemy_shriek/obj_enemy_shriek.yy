@@ -16,8 +16,8 @@
     "path":"folders/Objects/Enemies.yy",
   },
   "parentObjectId":{
-    "name":"Enemy",
-    "path":"objects/Enemy/Enemy.yy",
+    "name":"Minion",
+    "path":"objects/Minion/Minion.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

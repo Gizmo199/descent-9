@@ -2,7 +2,7 @@ if ( instance_exists(Shop) ) exit;
 if ( wave == wave_count-1 ) exit;
 with ( component_get(Component.Duck, Player) ) if ( ducking ) exit;
 
-wave_timer += DELTA;
+wave_timer += delta;
 if ( wave_timer >= wave_times[wave] )
 {
 	redraw = true;

@@ -1,15 +1,18 @@
-draw_sprite_tiled(sp_background_shop, 0, x, current_time/10);
+if ( room == rm_menu ) draw_sprite_tiled(sp_background_shop, 0, x, current_time/10);
 
 var i = 0;
 var _x = room_width/2.33;
 var _y = ( room_height/2 ) - ((total-1)*10*.5);
-var _k = keyboard_check_pressed(vk_space);
+var _k = input_get(eBinding.Primary);
 _y += 16;
 if ( fade_to_play ) _k = false;
+if ( instance_exists(Fade) ) _k = false;
+
 repeat(total)
 {
 	var _func = menu[i];
-	var _scrb = _func((curr == i) * !fade_to_play, _k);
+	var _scrb = _func((curr == i) * !fade_to_play * !instance_exists(Fade), _k);
+	if ( _k ) InputVerbConsume(INPUT_VERB.PRIMARY);
 	_scrb.outline(C_BLACK).draw(_x - 8, _y);
 	_y += 10;
 	if ( !is_main && i == floor(total/2) )

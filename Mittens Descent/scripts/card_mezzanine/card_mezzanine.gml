@@ -4,6 +4,7 @@ function card_mezzanine() : card_base() constructor {
 	desc = "Adds a platform above hellavators";
 	cost = [1, 0];
 	icon = sp_card_icon_environment;
+	index = 1;
 	func = function(){
 		with ( Platform )
 		{

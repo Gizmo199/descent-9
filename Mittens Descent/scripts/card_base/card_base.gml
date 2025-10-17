@@ -5,6 +5,7 @@ function card_base() constructor {
 	cost = [0, 0];
 	func = function(){};
 	icon = undefined;
+	index= 0;
 	odds = function(){ return 100; }
 	limit= true;
 	

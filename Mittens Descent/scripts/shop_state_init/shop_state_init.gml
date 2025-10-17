@@ -1,10 +1,7 @@
 function shop_state_init(){
 	
-	if ( shake > 0 )
+	if ( instance_exists(CameraShake) )
 	{
-		shake = approach(shake, 0, 0.1);
-		camera_set_view_pos(view_camera[0], random_range(-shake, shake), random_range(-shake, shake));
-		
 		with ( Player )
 		{
 			if ( y > room_height - 16 ) y-=4;
@@ -12,10 +9,8 @@ function shop_state_init(){
 			if ( x > room_width - 16 ) x-=4;
 			if ( x < 16 ) x+=4;
 		}
-		
 		return;
 	}
-	camera_set_view_pos(view_camera[0], 0, 0);
 	
 	with ( Player ) sprite_index = sp_player_shop;
 	var _x = room_width/2;
@@ -40,6 +35,7 @@ function shop_state_init(){
 	{
 		if ( wave >= wave_count-1 ) 
 		{
+			gamesave();
 			music_play(undefined);
 			sfx_play(snd_combat);
 			_this.win = true;

@@ -5,6 +5,7 @@ function card_high_ground() : card_base() constructor {
 	desc = "Increase height of mezzanines";
 	cost = [0, 0];
 	icon = sp_card_icon_environment;
+	index = 3;
 	func = function(){
 		var _incr = incr;
 		with ( Mezzanine ) image_yscale = _incr;

@@ -4,6 +4,7 @@ function card_bird_catcher() : card_base() constructor {
 	desc = "Increase jump speed";
 	cost = [0, 0];
 	icon = sp_card_icon_agility;
+	index = 1;
 	func = function(){
 		with ( Player ) component_add(Component.JumpSpeed);
 	}

@@ -3,8 +3,9 @@ if ( fade_to_play && fade >= 1 )
 	if ( --wait <= 0 ) room_goto(rm_play);
 	exit;
 }
-var _iy = ( keyboard_check(vk_down) - keyboard_check(vk_up) );
+var _iy = ( input_get(eBinding.Down) - input_get(eBinding.Up) );
 if ( fade_to_play ) _iy = 0;
+if ( instance_exists(Fade) ) _iy = 0;
 if ( sign(_iy) != 0 )
 {
 	var _curr = curr;

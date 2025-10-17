@@ -25,7 +25,7 @@ if ( draw_enemy != undefined )
 }
 
 // Wait for shake to stop
-if ( shake > 0 ) exit;
+if ( instance_exists(CameraShake) ) exit;
 
 // Base coordinates
 var _x = room_width/2;

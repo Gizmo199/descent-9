@@ -1,0 +1,1 @@
+if ( file_exists(PAUSE_SCREEN_FILENAME) ) file_delete(PAUSE_SCREEN_FILENAME);

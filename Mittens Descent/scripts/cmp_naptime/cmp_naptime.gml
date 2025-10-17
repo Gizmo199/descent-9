@@ -17,7 +17,7 @@ function cmp_naptime(e) : cmp_base(e) constructor {
 			with ( component_get(Component.WallHang) ) _is_sliding = hanging;
 			if ( point_distance(x, y, c.xprev, c.yprev) < 1 && !_is_sliding )
 			{
-				c.timer += DELTA;
+				c.timer += delta;
 			}
 			else
 			{

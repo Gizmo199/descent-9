@@ -6,7 +6,7 @@
   "name":"card_zoomies",
   "parent":{
     "name":"Agility",
-    "path":"folders/Cards/Agility.yy",
+    "path":"folders/Core/Cards/Agility.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

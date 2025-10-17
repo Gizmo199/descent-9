@@ -4,7 +4,12 @@ function cmp_hurtbox(e) : cmp_base(e) constructor {
 	sprite = sp_player_hurtbox_big;
 	on_damage = function(){
 		var e = entity;
-		with ( Player ) if ( self == e ) shop_create();
+		with ( Player ) if ( self == e )
+		{
+			hitstop(10);
+			camera_shake(2, 10);
+			shop_create();
+		}
 	};
 	
 	create = function(){

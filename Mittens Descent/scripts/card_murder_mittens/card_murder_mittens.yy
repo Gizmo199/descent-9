@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_murder_mittens",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_murder_mittens",
+  "parent":{
+    "name":"Agility",
+    "path":"folders/Core/Cards/Agility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

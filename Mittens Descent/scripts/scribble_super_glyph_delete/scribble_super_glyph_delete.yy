@@ -6,7 +6,7 @@
   "name":"scribble_super_glyph_delete",
   "parent":{
     "name":"Superfonts",
-    "path":"folders/Scripts/Scribble/Superfonts.yy",
+    "path":"folders/Core/Scribble/Superfonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

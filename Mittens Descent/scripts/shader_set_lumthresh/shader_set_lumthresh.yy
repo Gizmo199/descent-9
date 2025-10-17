@@ -6,7 +6,7 @@
   "name":"shader_set_lumthresh",
   "parent":{
     "name":"Shaders",
-    "path":"folders/Shaders.yy",
+    "path":"folders/Core/Shaders.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

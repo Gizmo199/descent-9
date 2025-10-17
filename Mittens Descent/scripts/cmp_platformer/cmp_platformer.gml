@@ -26,23 +26,57 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 		return jump_speed;
 	}
 	static jump = function(){
+		
+		// Destroy enemy and jump?
+		var e = entity;
+		var c = self;
+		var _doJump = true;
+		var _sound  = snd_jump_01;
+		
+		with ( component_get(Component.JumpDestroy, e) )
+		{
+			// Check if we are mid-air
+			var _midair = true;
+			with ( e ) if ( place_meeting(x, y+1, Collider) ) _midair = false;
+			
+			// If enemy exists, jump destroy!
+			var _enemy = get();
+			if( _enemy != undefined && _midair ) 
+			{
+				hitstop(15);
+				camera_shake(3, 10);
+				sfx_play(snd_hit_02);
+				instance_create_layer(_enemy.x, _enemy.y, "Effects", Effect, { bad : true,  image_blend : C_RED });
+				instance_destroy(_enemy);
+				c.coyote_time = 1;
+				_doJump = true;
+				_sound = snd_jump_02;
+				
+				with ( Spawner ) alarm[0] = 1;
+			}
+		}
 
+		// Double jumping
 		if ( coyote_time <= 0 )
 		{
-			var c = self;
-			with ( component_get(Component.DoubleJump, entity) )
+			_doJump = false;
+			with ( component_get(Component.DoubleJump, e) )
 			{
-				with ( component_get(Component.WallHang, entity) ) if ( hanging ) return;
-				if ( count > 0 ) 
+				var _doCount = true;
+				with ( component_get(Component.WallHang, e) ) if ( hanging ) _doCount = false;
+				if ( count > 0 && _doCount ) 
 				{
+					_doCount = false;
+					_doJump = true;
+					_sound = snd_jump_02;
 					count  = 0;
-					c.vspeed = -c.get_jumpspeed();	
-					sfx_play(snd_jump_02);
 				}
 			}
-			return;
 		}
-		sfx_play(snd_jump_01);
+		
+		// Normal Jumping
+		if ( !_doJump ) return;
+		sfx_play(_sound);
 		vspeed = -get_jumpspeed();
 		coyote_time = 0;
 		
@@ -71,7 +105,7 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 		{
 			_ix = get(eBinding.Right) - get(eBinding.Left);
 			_iy = get(eBinding.Down) - get(eBinding.Up);
-			_ij = get(eBinding.Action0);
+			_ij = get(eBinding.Primary);
 		}
 		
 		
@@ -157,6 +191,14 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 		
 	}
 	draw = function(){
+		with ( component_get(Component.JumpDestroy, entity) )
+		{
+			with ( get() )
+			{
+				draw_sprite_ext(sp_player_exclaimation, 0, x, bbox_top - 2, 1, 1, 0, c_white, 1);
+			}
+		}
+		
 		if ( !debug ) return;	
 		draw_set_color(c_red);
 		draw_set_alpha(1);

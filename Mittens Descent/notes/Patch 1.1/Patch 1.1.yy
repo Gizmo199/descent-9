@@ -4,7 +4,7 @@
   "name":"Patch 1.1",
   "parent":{
     "name":"Patchnotes",
-    "path":"folders/Patchnotes.yy",
+    "path":"folders/Core/Patchnotes.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

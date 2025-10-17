@@ -6,7 +6,7 @@
   "name":"cmp_config",
   "parent":{
     "name":"ECS",
-    "path":"folders/ECS.yy",
+    "path":"folders/Core/ECS.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

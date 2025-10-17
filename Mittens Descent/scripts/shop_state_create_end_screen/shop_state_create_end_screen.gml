@@ -9,7 +9,7 @@ function shop_state_create_end_screen(){
 		lerp_to_location(id, _x, y + _float, 0.1);
 	}
 	
-	if ( keyboard_check_pressed(vk_anykey) )
+	if ( input_get(eBinding.Primary) )
 	{
 		if ( !fadeout ) sfx_play(snd_combat);
 		fadeout = true;

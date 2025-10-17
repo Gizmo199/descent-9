@@ -2,6 +2,7 @@ enum Component {
 	Health,
 	Damage,
 	LocalInput,
+	JumpDestroy,
 	DoubleJump,
 	Platformer,
 	Duck,
@@ -35,3 +36,4 @@ component_define(Component.Naptime, cmp_naptime);
 component_define(Component.Hurtbox, cmp_hurtbox);
 component_define(Component.Luck, cmp_luck);
 component_define(Component.Shield, cmp_shield);
+component_define(Component.JumpDestroy, cmp_jumpdestroy);

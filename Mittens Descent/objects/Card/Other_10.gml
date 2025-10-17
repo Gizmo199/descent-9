@@ -1,5 +1,5 @@
 draw_sprite(sprite_index, selected, x, y + float);
-if ( icon != undefined ) draw_sprite(icon, 0, x, y + float);
+if ( icon != undefined ) draw_sprite_ext(icon, index, x, y + float, 1, 1, 0, selected ? C_RED : C_LTGRAY, 1);
 
 var _total = cost[0] + cost[1];
 var _x = ( x - ( icon_w * .5 * _total )) + icon_w * .5;

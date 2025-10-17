@@ -6,7 +6,7 @@
   "name":"card_landing_pad",
   "parent":{
     "name":"Environment",
-    "path":"folders/Cards/Environment.yy",
+    "path":"folders/Core/Cards/Environment.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

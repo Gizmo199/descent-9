@@ -31,7 +31,6 @@ handl_x = 0;
 handl_y = skull_y;
 handr_x = room_width;
 handr_y = skull_y;
-shake = 2;
 fadeout = false;
 fade = 0;
 platform = Platform;

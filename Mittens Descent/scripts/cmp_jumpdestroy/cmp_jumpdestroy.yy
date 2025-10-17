@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"cmp_jumpdestroy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"cmp_jumpdestroy",
+  "parent":{
+    "name":"Components",
+    "path":"folders/Core/ECS/Components.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

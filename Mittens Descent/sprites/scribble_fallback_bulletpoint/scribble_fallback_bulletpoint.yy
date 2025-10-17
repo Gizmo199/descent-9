@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"(System - don't call these functions)",
-    "path":"folders/Scripts/Scribble/(System - don't call these functions).yy",
+    "path":"folders/Core/Scribble/(System - don't call these functions).yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,6 +5,7 @@ function card_landing_pad() : card_base() constructor {
 	desc = "Increase size of platforms";
 	cost = [0, 0];
 	icon = sp_card_icon_environment;
+	index = 2;
 	func = function(){
 		var _incr = incr;
 		with ( Platform ) image_xscale = _incr;

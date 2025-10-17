@@ -6,7 +6,7 @@
   "name":"cmp_shield",
   "parent":{
     "name":"Components",
-    "path":"folders/ECS/Components.yy",
+    "path":"folders/Core/ECS/Components.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

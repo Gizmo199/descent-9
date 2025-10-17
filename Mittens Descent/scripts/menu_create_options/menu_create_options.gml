@@ -6,19 +6,7 @@ function menu_create_options(){
 			{
 				sfx_play(snd_blip);
 				global.settings.fullscreen = !global.settings.fullscreen;
-				if ( global.settings.fullscreen )
-				{
-					window_set_showborder(false);
-					window_set_size(display_get_width(), display_get_height());
-					window_center();
-				}
-				else
-				{
-					window_set_showborder(true);
-					window_set_size(display_get_width()/2, display_get_height()/2);
-					window_center();
-				}
-	
+				gamewindow();
 			}
 			return menu_scribble("Fullscreen", _selected);
 		},
@@ -35,7 +23,7 @@ function menu_create_options(){
 			if ( _selected ) 
 			{
 				var _gain = audio_emitter_get_gain(global.emitter_music);
-				var _ix = ( keyboard_check(vk_right) - keyboard_check(vk_left) ) * 0.1;
+				var _ix = ( input_get(eBinding.Right) - input_get(eBinding.Left) ) * 0.1;
 				
 				if ( sign(_ix) != 0 )
 				{
@@ -63,7 +51,7 @@ function menu_create_options(){
 			if ( _selected ) 
 			{
 				var _gain = audio_emitter_get_gain(global.emitter_sfx);
-				var _ix = ( keyboard_check(vk_right) - keyboard_check(vk_left) ) * 0.1;
+				var _ix = ( input_get(eBinding.Right) - input_get(eBinding.Left) ) * 0.1;
 				
 				if ( sign(_ix) != 0 )
 				{
@@ -86,41 +74,13 @@ function menu_create_options(){
 			}
 			var _gain = audio_emitter_get_gain(global.emitter_sfx);
 			return menu_scribble($"Sfx : {round(_gain*100)}%", _selected);
-		},
-		function(_selected, _pressed){
-			static _timer = 1;
-			if ( _selected ) 
-			{
-				var _ix = ( keyboard_check(vk_right) - keyboard_check(vk_left) );
-				
-				if ( sign(_ix) != 0 )
-				{
-					if ( _timer && !--_timer ) 
-					{
-						_timer = 12;
-						global.settings.wave += _ix;
-						global.settings.wave = clamp(global.settings.wave, 3, 9);
-						sfx_play(snd_blip);
-					}
-				} else _timer = 1;				
-			}
-			return menu_scribble($"Waves : {global.settings.wave}", _selected);
-		},
-		function(_selected, _pressed){
-			if ( _selected && _pressed ) 
-			{
-				sfx_play(snd_blip);
-				menu_create_main(0);	
-				instance_destroy();
-			}
-			return menu_scribble("Back", _selected);
-		},
-		
+		}
 	];
 	music_play(msc_menu);
 	if ( os_browser != browser_not_a_browser || os_get_config() == "HTML" ) array_shift(_menu);
-	return instance_create_layer(0, 0, layer, Menu, {
+	return instance_create_layer(0, 0, "Menu", Menu, {
 		
+		back : menu_create_main,
 		fade : 0,
 		menu : _menu,
 		title : "Options"

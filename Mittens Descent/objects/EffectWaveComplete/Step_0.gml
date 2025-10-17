@@ -14,4 +14,3 @@ if ( _alpha != alpha && alpha == 1 )
 }
 if ( time < 15 ) in = 0;
 x = room_width * alpha;
-y = room_height/2;

@@ -1,7 +1,10 @@
 function card_murder_mittens() : card_base() constructor {
 	
 	name = "Murderer Mittens"
-	desc = "Destroy nearby enemies while [c_red]mid-air[c_white] by pressing [sp_player_control_jump, 0]. Player will jump again (does not use up double jump)";
+	desc = function(){
+		var _icon = input_icon_text(INPUT_VERB.JUMP);
+		return $"Destroy nearby enemies while [c_red]mid-air[c_white] by pressing {_icon}. Player will jump again (does not use up double jump)";
+	}
 	cost = [2, 1];
 	icon = sp_card_icon_agility;
 	index = 4;

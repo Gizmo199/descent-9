@@ -325,6 +325,7 @@
     {"id":{"name":"gamewindow","path":"scripts/gamewindow/gamewindow.yy",},},
     {"id":{"name":"hitstop","path":"scripts/hitstop/hitstop.yy",},},
     {"id":{"name":"input_get","path":"scripts/input_get/input_get.yy",},},
+    {"id":{"name":"input_icon_text","path":"scripts/input_icon_text/input_icon_text.yy",},},
     {"id":{"name":"InputBindingFind","path":"scripts/InputBindingFind/InputBindingFind.yy",},},
     {"id":{"name":"InputBindingFindCollisions","path":"scripts/InputBindingFindCollisions/InputBindingFindCollisions.yy",},},
     {"id":{"name":"InputBindingGet","path":"scripts/InputBindingGet/InputBindingGet.yy",},},

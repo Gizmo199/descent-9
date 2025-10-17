@@ -1,7 +1,7 @@
 function cmp_naptime(e) : cmp_base(e) constructor {
 	
 	timer = 0;
-	seconds = 2;
+	seconds = 1.5;
 	xprev = undefined;
 	yprev = undefined;
 	using = false;

@@ -1,7 +1,10 @@
 function card_double_jump() : card_base() constructor {
 	
 	name = "Double Jump"
-	desc = "Perform a jump [c_red]mid-air[c_white] using [sp_player_control_jump, 0]";
+	desc = function(){
+		var _icon = input_icon_text(INPUT_VERB.JUMP);
+		return $"Perform a jump [c_red]mid-air[c_white] using {_icon}";
+	}
 	cost = [1, 0];
 	icon = sp_card_icon_agility;
 	index= 0;

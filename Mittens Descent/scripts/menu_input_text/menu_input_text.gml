@@ -1,5 +1,4 @@
 function menu_input_text(_verb, _name){
-	var _icon = InputIconGet(_verb);
-	_icon = ( !is_string(_icon) ? $"[{sprite_get_name(_icon)},0]" : _icon );	
+	var _icon = input_icon_text(_verb);	
 	return $"{_icon}" + " " + _name;
 }

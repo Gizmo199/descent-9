@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sp_player_hp_token",
-    "path":"sprites/sp_player_hp_token/sp_player_hp_token.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

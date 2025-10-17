@@ -1,7 +1,7 @@
 function cmp_health(e) : cmp_base(e) constructor {
 	
-	hp = 9;
-	hp_max = 9;
+	hp = global.settings.wave;
+	hp_max = hp;
 	highlight = [];
 	highlight_both = [];
 	highlight_pos = [];

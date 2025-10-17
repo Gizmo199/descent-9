@@ -34,15 +34,15 @@ switch(_wave)
 	case 1 :
 	case 2 : wait = 20; break;
 	case 3 : 
-	case 4 : wait = 10; break;
+	case 4 : wait = 15; break;
 	case 5 : 
-		wait = 10;
-		angle_spd *= 1.5;
+		wait = 15;
+		angle_spd *= 1.25;
 		break;
 	default:
 	case 6 : 
-		wait = 0;
-		angle_spd *= 2;
+		wait = 10;
+		angle_spd *= 1.5;
 		break;
 }
 

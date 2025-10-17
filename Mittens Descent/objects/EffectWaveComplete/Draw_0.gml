@@ -1,4 +1,4 @@
-draw_set_color(C_RED);
+draw_set_color(C_GRAY);
 draw_set_alpha(alpha);
 draw_rectangle(0, y - thickness, x, y + thickness, false);
 draw_set_alpha(1);

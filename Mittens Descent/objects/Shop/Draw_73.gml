@@ -47,8 +47,10 @@ with ( cards[selected] )
 		.outline(C_BLACK)
 	_scb.draw(room_width/2, _y);
 	var _y = _scb.get_bbox(room_width/2, _y).bottom;
-
-	scribble($"[scale, 0.5][wave][fnt_text_outline][c_white]{desc}")
+	
+	var _desc = desc;
+	if ( is_method(desc) ) _desc = desc();
+	scribble($"[scale, 0.5][wave][fnt_text_outline][c_white]{_desc}")
 		.align(fa_center, fa_top)
 		.wrap(room_width/2)
 		.outline(C_BLACK)

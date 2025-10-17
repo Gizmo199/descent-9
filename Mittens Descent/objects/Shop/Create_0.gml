@@ -34,6 +34,7 @@ handr_y = skull_y;
 fadeout = false;
 fade = 0;
 platform = Platform;
+crown_y = -16;
 
 // Add components
 component_add(Component.LocalInput);

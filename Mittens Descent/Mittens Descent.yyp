@@ -727,6 +727,7 @@
     {"id":{"name":"sp_player_control_jump","path":"sprites/sp_player_control_jump/sp_player_control_jump.yy",},},
     {"id":{"name":"sp_player_control_key_group","path":"sprites/sp_player_control_key_group/sp_player_control_key_group.yy",},},
     {"id":{"name":"sp_player_control_keys","path":"sprites/sp_player_control_keys/sp_player_control_keys.yy",},},
+    {"id":{"name":"sp_player_crown","path":"sprites/sp_player_crown/sp_player_crown.yy",},},
     {"id":{"name":"sp_player_die","path":"sprites/sp_player_die/sp_player_die.yy",},},
     {"id":{"name":"sp_player_duck","path":"sprites/sp_player_duck/sp_player_duck.yy",},},
     {"id":{"name":"sp_player_exclaimation","path":"sprites/sp_player_exclaimation/sp_player_exclaimation.yy",},},

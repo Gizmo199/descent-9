@@ -17,7 +17,16 @@ if ( state == shop_state_create_end_screen )
 	scribble(_t1 + "\n[scale, 0.33][wave][c_red]press any key to continue...")
 		.align(fa_center, fa_top)
 		.outline(C_BLACK)
-		.draw(room_width/2, _box.bottom);		
+		.draw(room_width/2, _box.bottom);
+	
+	if ( win ) 
+	{
+		with ( Player )
+		{
+			other.crown_y = lerp(other.crown_y, y-16, 0.1);
+			draw_sprite(sp_player_crown, current_time/60, x, other.crown_y);
+		}	
+	}
 	exit;
 }
 

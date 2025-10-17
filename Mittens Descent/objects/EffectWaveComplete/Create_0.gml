@@ -8,7 +8,7 @@ in = 1;
 typist.in(0.5, 0);
 
 win = false;
-text = $"Wave {wave}/{global.settings.wave} Complete!";
+text = $"WAVE {wave}/{global.settings.wave} COMPLETE";
 if ( wave == global.settings.wave )
 {
 	win = true;

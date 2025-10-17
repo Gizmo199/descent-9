@@ -5,6 +5,7 @@ enum eBinding {
 	Right,
 	Up, 
 	Down,
+	Jump,
 	Primary,
 	Secondary,
 	

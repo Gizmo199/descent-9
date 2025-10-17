@@ -22,6 +22,15 @@ function menu_create_pause(){
 			if ( _selected && _pressed ) 
 			{
 				sfx_play(snd_blip);
+				menu_create_controls();	
+				instance_destroy();
+			}
+			return menu_scribble("Controls", _selected);
+		},
+		function(_selected, _pressed){
+			if ( _selected && _pressed ) 
+			{
+				sfx_play(snd_blip);
 				gamefade(false, function(){
 					room_goto(rm_menu);
 				});	

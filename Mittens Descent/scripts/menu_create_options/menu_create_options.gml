@@ -74,6 +74,7 @@ function menu_create_options(){
 	if ( os_browser != browser_not_a_browser || os_get_config() == "HTML" ) array_shift(_menu);
 	return instance_create_layer(0, 0, "Menu", Menu, {
 		
+		center : true,
 		back : menu_create_main,
 		fade : 0,
 		menu : _menu,

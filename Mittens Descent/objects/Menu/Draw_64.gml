@@ -27,16 +27,7 @@ if ( back != undefined )
 	var _back = InputIconGet(INPUT_VERB.SECONDARY);
 	_back = ( !is_string(_back) ? $"[{sprite_get_name(_back)}, 0]" : _back );
 	_text = $"{_back} Back";	
-		
-	// Run back script
-	if ( input_get(eBinding.Secondary) && !fade_to_play && !instance_exists(Fade) )
-	{
-		back(0);
-		sfx_play(snd_blip);
-		instance_destroy();
-		InputVerbConsume(INPUT_VERB.SECONDARY);
-	}
-	
+
 	scribble(_text)
 		.align(fa_right, fa_top)
 		.outline(C_BLACK)

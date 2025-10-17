@@ -34,11 +34,13 @@ function menu_create_wave_select(){
 				else _text += "[sp_player_hp_token, 1]";
 				i++;
 			}
-			return menu_scribble($"[c_white]{_text} [c_red]{global.settings.wave}", _selected);
+			title = $"Waves : {global.settings.wave}";
+			return menu_scribble($"[c_white]{_text}", _selected);
 		}		
 	];
 	return instance_create_layer(0, 0, "Menu", Menu, {
 		
+		center : true,
 		back : menu_create_main,
 		fade : 0,
 		menu : _menu,

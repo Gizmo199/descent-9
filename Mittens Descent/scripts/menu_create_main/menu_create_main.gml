@@ -28,6 +28,15 @@ function menu_create_main(_fade=1){
 		function(_selected, _pressed){
 			if ( _selected && _pressed ) 
 			{
+				sfx_play(snd_blip);
+				menu_create_controls();	
+				instance_destroy();
+			}
+			return menu_scribble("Controls", _selected);
+		},
+		function(_selected, _pressed){
+			if ( _selected && _pressed ) 
+			{
 				gamefade(false, function(){
 					game_end();
 				});	

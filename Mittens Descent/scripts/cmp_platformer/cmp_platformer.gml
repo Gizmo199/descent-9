@@ -105,7 +105,7 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 		{
 			_ix = get(eBinding.Right) - get(eBinding.Left);
 			_iy = get(eBinding.Down) - get(eBinding.Up);
-			_ij = get(eBinding.Primary);
+			_ij = get(eBinding.Jump);
 		}
 		
 		

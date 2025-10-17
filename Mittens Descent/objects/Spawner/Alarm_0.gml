@@ -1,3 +1,8 @@
+if ( instance_exists(EffectWaveComplete) ) 
+{
+	alarm[0] = 1;
+	exit;
+}	
 alarm[0] = wave_rates[wave];
 if ( instance_exists(Shop) ) exit;
 

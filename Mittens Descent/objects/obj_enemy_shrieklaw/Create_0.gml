@@ -5,6 +5,7 @@ dest_y = room_height/2;
 spd = 1;
 journey = 1;
 shriek = undefined;
+explosion = sp_explosion_medium;
 
 var _max = 3;
 var _wave = 0;

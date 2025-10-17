@@ -7,7 +7,7 @@ function cmp_hurtbox(e) : cmp_base(e) constructor {
 		with ( Player ) if ( self == e )
 		{
 			hitstop(10);
-			camera_shake(2, 10);
+			camera_shake(3, 10);
 			shop_create();
 		}
 	};

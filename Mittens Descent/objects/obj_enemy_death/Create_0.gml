@@ -1,6 +1,6 @@
 // Inherit the parent event
 event_inherited();
-
+explosion = sp_explosion_large;
 wait = 20;
 dest_y = 0;
 dest_x = 32;

@@ -43,11 +43,22 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 			var _enemy = get();
 			if( _enemy != undefined && _midair ) 
 			{
+				var _snd = snd_explosion_01;
+				with ( _enemy )
+				{
+					instance_create_depth(x, y, depth, EffectOneshot, {
+						sprite_index : explosion,
+						image_index  : 0
+					});	
+					if ( explosion == sp_explosion_medium ) _snd = snd_explosion_02;
+					if ( explosion == sp_explosion_large ) _snd = snd_explosion_03;
+				}
+				
 				hitstop(15);
-				camera_shake(3, 10);
-				sfx_play(snd_hit_02);
-				instance_create_layer(_enemy.x, _enemy.y, "Effects", Effect, { bad : true,  image_blend : C_RED });
+				camera_shake(2, 10);
+				sfx_play(_snd);
 				instance_destroy(_enemy);
+				
 				c.coyote_time = 1;
 				_doJump = true;
 				_sound = snd_jump_02;

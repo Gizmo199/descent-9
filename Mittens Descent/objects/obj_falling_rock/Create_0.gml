@@ -18,9 +18,10 @@ with ( Player )
 	_this.x = x;
 	_this.y = -_this.sprite_height;
 }
-
+explosion = sp_explosion_small;
 if ( sprite_index != sp_hazard_rock_large ) exit;
 
+explosion = sp_explosion_large;
 var _total = 1;
 var _number = instance_number(object_index) - 1;
 var _wave = 0;

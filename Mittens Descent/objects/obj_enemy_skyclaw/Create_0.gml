@@ -11,6 +11,7 @@ angle_max = 180;
 angle_cur = 0;
 intro = true;
 wait = 30;
+explosion = sp_explosion_medium;
 
 var _total = instance_number(object_index);
 var _max = 2;

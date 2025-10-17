@@ -8,15 +8,9 @@ function menu_create_options(){
 				global.settings.fullscreen = !global.settings.fullscreen;
 				gamewindow();
 			}
-			return menu_scribble("Fullscreen", _selected);
-		},
-		function(_selected, _pressed){
-			if ( _selected && _pressed ) 
-			{
-				sfx_play(snd_blip);
-				global.settings.hurtbox = !global.settings.hurtbox;	
-			}
-			return menu_scribble($"Show Hurtbox : {global.settings.hurtbox ? "On" : "Off"}", _selected);
+			var _text = "Fullscreen";
+			if ( global.settings.fullscreen ) _text = "Windowed"
+			return menu_scribble(_text, _selected);
 		},
 		function(_selected, _pressed){
 			static _timer = 1;

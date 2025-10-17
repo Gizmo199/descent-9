@@ -26,7 +26,7 @@ function menu_create_pause(){
 					room_goto(rm_menu);
 				});	
 			}
-			return menu_scribble("Exit", _selected);
+			return menu_scribble("Quit", _selected);
 		}
 	];
 	music_play(msc_menu, true);

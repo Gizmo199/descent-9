@@ -33,7 +33,7 @@ function shop_state_init(){
 	// Win?
 	with ( Spawner )
 	{
-		if ( wave >= wave_count-1 ) 
+		if ( wave > wave_count-1 ) 
 		{
 			gamesave();
 			music_play(undefined);

@@ -6,3 +6,17 @@ typist = scribble_typist();
 thickness = 16;
 in = 1;
 typist.in(0.5, 0);
+
+win = false;
+text = $"Wave {wave}/{global.settings.wave} Complete!";
+if ( wave == global.settings.wave )
+{
+	win = true;
+	text = "WAVES COMPLETE";
+	component_remove(Component.Shield, Player);
+	component_add(Component.Shield, {
+		used : false,
+		time : 100000,
+		time_max : 10000
+	}, Player);
+}

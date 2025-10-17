@@ -1,5 +1,5 @@
 if ( instance_exists(Shop) ) exit;
-if ( wave == wave_count-1 ) exit;
+if ( wave > wave_count-1 ) exit;
 with ( component_get(Component.Duck, Player) ) if ( ducking ) exit;
 if ( instance_exists(EffectWaveComplete) ) exit;
 wave_timer += delta;
@@ -20,4 +20,5 @@ if ( wave_timer >= wave_times[wave] )
 	redraw = true;
 	wave_timer = 0;
 	wave++;	
+	if ( wave > wave_count-1 ) alarm[0] = 0;
 }

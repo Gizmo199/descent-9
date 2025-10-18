@@ -11,7 +11,7 @@ function shop_state_create_end_screen(){
 	
 	if ( input_get(eBinding.Primary) )
 	{
-		if ( !fadeout ) sfx_play(snd_combat);
+		if ( !fadeout ) sfx_play(snd_blip);
 		fadeout = true;
 	}
 	if ( fade >= 1 ) room_goto(rm_menu);	

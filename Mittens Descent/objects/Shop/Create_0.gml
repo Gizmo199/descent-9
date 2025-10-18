@@ -1,5 +1,4 @@
 event_inherited();
-with ( Spawner ) wave_timer = floor(wave_timer/2);
 with ( Player )
 {
 	component_deactivate_all();
@@ -11,11 +10,16 @@ music_play(msc_menu, true);
 var _sfx = snd_die;
 with ( component_get(Component.Health, Player) )
 {
-	if ( get() <= 0 )
+	if ( get() <= 1 )
 	{
 		_sfx = snd_game_lose;
 		music_play(undefined);
 	}
+}
+with ( Spawner ) 
+{
+	if ( wave > wave_count-1 ) _sfx = snd_combat;
+	wave_timer = floor(wave_timer/2);
 }
 sfx_play(_sfx);
 

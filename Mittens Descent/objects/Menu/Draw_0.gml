@@ -47,9 +47,9 @@ repeat(total)
 if ( is_main ) 
 {
 	var _sep = 12;
-	var _y = ( room_height/2 ) - _sep;
+	var _y = ( room_height/2.125 ) - _sep;
 	draw_sprite(sp_title, 0, room_width/2, _y + dcos((current_time+180)/10)*2);
-	draw_sprite(sp_player_shop, 0, room_width/2, _y + _sep + dcos(current_time/10)*2); 
+	draw_sprite(sp_player_shop, 0, room_width/2, _y + _sep + 24 + dcos(current_time/10)*2); 
 }
 else
 {

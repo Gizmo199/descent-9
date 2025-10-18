@@ -1,0 +1,5 @@
+- Unique graphics for each card
+- Card colors darkened and brightened
+- Card descriptions updated to include UI symbols
+- New 'Murder Mittens' card
+- Added various effect feedback

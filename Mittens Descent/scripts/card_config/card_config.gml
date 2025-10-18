@@ -20,7 +20,7 @@ enum eCard {
 	Sizeof
 }
 global.__card_forced = [];
-//global.__card_forced = [eCard.MurderMittens];
+//global.__card_forced = [eCard.LuckyCat];
 
 show_debug_message($"Total number of cards : {eCard.Sizeof}");
 function card_register(_enum, _constructor){

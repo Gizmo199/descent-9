@@ -42,7 +42,7 @@ switch(_wave)
 	default:
 	case 6 : 
 		wait = 10;
-		angle_spd *= 1.5;
+		angle_spd *= 1.25;
 		break;
 }
 

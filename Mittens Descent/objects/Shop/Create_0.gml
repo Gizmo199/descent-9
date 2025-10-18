@@ -1,5 +1,5 @@
 event_inherited();
-with ( Spawner ) wave_timer = 0;
+with ( Spawner ) wave_timer = floor(wave_timer/2);
 with ( Player )
 {
 	component_deactivate_all();

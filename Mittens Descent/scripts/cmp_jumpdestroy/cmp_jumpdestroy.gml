@@ -1,6 +1,6 @@
 function cmp_jumpdestroy(e) : cmp_base(e) constructor {
 	
-	radius = 24;
+	radius = 28;
 	enemy  = undefined;
 	update = function(){
 		

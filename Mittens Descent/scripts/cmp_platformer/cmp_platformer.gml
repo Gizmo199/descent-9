@@ -63,7 +63,8 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 				_doJump = true;
 				_sound = snd_jump_02;
 				
-				with ( Spawner ) alarm[0] = 1;
+				// 1 in 3 chance to "double-tap"
+				if ( choose(true, false, false) ) with ( Spawner ) alarm[0] = 5;
 			}
 		}
 

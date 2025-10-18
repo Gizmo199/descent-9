@@ -13,7 +13,7 @@ function card_murder_mittens() : card_base() constructor {
 	}
 	odds = function(){
 		if ( component_exists(Component.JumpDestroy, Player) ) return 0;
-		return 12;
+		return 24;
 	}
 	
 }

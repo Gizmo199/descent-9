@@ -1,7 +1,7 @@
 {
   "$GMNotes":"",
-  "%Name":"Patch 1.1",
-  "name":"Patch 1.1",
+  "%Name":"Patch 2.0",
+  "name":"Patch 2.0",
   "parent":{
     "name":"Patchnotes",
     "path":"folders/Patchnotes.yy",

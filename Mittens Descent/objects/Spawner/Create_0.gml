@@ -27,7 +27,7 @@ wave_weight =
 	[25, 25, 25, 25],
 	[10, 20, 30, 40],
 ];
-wave_rates = [30, 60, 60, 60, 60, 60, 60, 60, 60];	// How often things spawn
-wave_times = [10, 15, 20, 25, 30, 35, 40, 45, 50];	// How long each wave is
+wave_rates = [30, 60, 60, 65, 65, 65, 60, 60, 55];	// How often things spawn
+wave_times = [8, 12, 15, 20, 25, 28, 30, 33, 36];	// How long each wave is
 alarm[0] = wave_rates[wave];
 redraw = true;

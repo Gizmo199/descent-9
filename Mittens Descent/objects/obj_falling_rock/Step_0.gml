@@ -58,30 +58,6 @@ if ( place_meeting(x, y+vsp, Collider) )
 	{
 		if ( sprite_index == sp_hazard_rock_large )
 		{
-			// Check to drop hp token
-			with ( component_get(Component.Luck, Player) )
-			{
-				if ( random_chance(chance) ) 
-				{
-					var _index = 0;
-					var _chance = 25;
-					var _create = true;
-					with ( component_get(Component.Health, entity) )
-					{
-						if ( get() < 3 ) _chance = 0;	
-						if ( get() == get_max() ) _create = false;
-					}
-					if ( random_chance(_chance) ) _index = 1;
-					
-					if ( _create ) 
-					{
-						instance_create_layer(other.x, other.y, other.layer, HPToken, {
-							image_index : _index	
-						});
-					}
-				}
-			}
-			
 			// Spawn smaller rocks			
 			var _numb = 2;
 			var _left = false;

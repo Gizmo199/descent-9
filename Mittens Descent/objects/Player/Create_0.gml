@@ -18,3 +18,4 @@ black = [
 
 timer = 1;
 blink = false;
+can_pause = true;

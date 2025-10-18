@@ -2,16 +2,11 @@ var _fade = 1;
 with ( Fade ) _fade = 1-alpha;
 
 // Draw navigation text
-var _up = InputIconGet(INPUT_VERB.UP);
-var _down = InputIconGet(INPUT_VERB.DOWN);
-var _left = InputIconGet(INPUT_VERB.LEFT);
-var _right= InputIconGet(INPUT_VERB.RIGHT);
-var _prim = InputIconGet(INPUT_VERB.PRIMARY);
-_up		= ( !is_string(_up) ? $"[{sprite_get_name(_up)}, 0]" : _up );
-_down	= ( !is_string(_down) ? $"[{sprite_get_name(_down)}, 0]" : _down );
-_left	= ( !is_string(_left) ? $"[{sprite_get_name(_left)}, 0]" : _left );
-_right	= ( !is_string(_right) ? $"[{sprite_get_name(_right)}, 0]" : _right );
-_prim	= ( !is_string(_prim) ? $"[{sprite_get_name(_prim)}, 0]" : _prim );
+var _up = input_icon_text(INPUT_VERB.UP);
+var _down = input_icon_text(INPUT_VERB.DOWN);
+var _left = input_icon_text(INPUT_VERB.LEFT);
+var _right = input_icon_text(INPUT_VERB.RIGHT);
+var _prim = input_icon_text(INPUT_VERB.PRIMARY);
 var _text = $"{_prim} Accept\n{_right}{_up}{_left}{_down} Navigate";
 
 // Draw nav text

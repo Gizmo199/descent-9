@@ -7,10 +7,10 @@ journey = 1;
 shriek = undefined;
 explosion = sp_explosion_medium;
 
-var _max = 3;
+var _max = 2;
 var _wave = 0;
 with ( Spawner ) _wave = wave;
-if ( _wave > 6 ) { _max = 4; journey = 2; }
+if ( _wave > 6 ) { _max = 3; journey = 2; }
 if ( _wave > 8 ) { _max = 5; journey = 3; }
 if ( instance_number(object_index) > _max )
 {

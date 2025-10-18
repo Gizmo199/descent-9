@@ -1,0 +1,25 @@
+Menus
+- Gamepad support 
+- Full keyboard & gamepad control scheme rebinding
+- New menu layouts
+- Wave selection menu before playing
+- Removed hitbox option
+- Game pausing & menu
+- New card menu to view cards collected
+
+UI & UX
+- Changed 'health' icon to be heart instead
+- Explosion effects and sounds in some places
+- New wave complete notification effect
+- New explosion sound effects
+
+Balancing
+- Current wave progress is halved now when you die
+- Shortened wave times for later waves
+- No longer have to die to win
+- Between waves, enemies no longer spawn
+- Starting HP directly equals wave count now
+- Increased lucky cat drop chance from 10% to 15%
+- Increased Impurrvious effect to 3 seconds
+- Ducking no longer halts wave progress
+- Naptime reduced to 1.5s instead of 2s to regain HP

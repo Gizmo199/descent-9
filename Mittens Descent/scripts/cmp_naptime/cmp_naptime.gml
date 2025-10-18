@@ -30,7 +30,8 @@ function cmp_naptime(e) : cmp_base(e) constructor {
 			if ( c.timer >= c.seconds )
 			{
 				c.timer = 0;
-				with ( component_get(Component.Health) ) add(1);					
+				with ( component_get(Component.Health) ) add(1);	
+				sfx_play(snd_blip);
 			}			
 			c.xprev = x;
 			c.yprev = y;

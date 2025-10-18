@@ -1,3 +1,4 @@
+global.cards = [];
 component_add(Component.LocalInput);
 component_add(Component.Platformer);
 component_add(Component.Health, { hp : global.settings.wave, hp_max : global.settings.wave });

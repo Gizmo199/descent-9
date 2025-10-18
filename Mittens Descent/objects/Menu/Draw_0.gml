@@ -1,7 +1,7 @@
 if ( room == rm_menu ) draw_sprite_tiled(sp_background_shop, 0, x, current_time/10);
 
 // Run back script
-if ( input_get(eBinding.Secondary) && !fade_to_play && !instance_exists(Fade) )
+if ( back != undefined && input_get(eBinding.Secondary) && !fade_to_play && !instance_exists(Fade) )
 {
 	back(0);
 	sfx_play(snd_blip);

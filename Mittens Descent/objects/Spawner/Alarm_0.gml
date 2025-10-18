@@ -1,4 +1,4 @@
-if ( instance_exists(EffectWaveComplete) ) 
+if ( instance_exists(EffectWaveComplete) or wave_wait ) 
 {
 	alarm[0] = 1;
 	exit;

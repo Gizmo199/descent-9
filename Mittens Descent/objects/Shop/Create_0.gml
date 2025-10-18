@@ -1,4 +1,5 @@
 event_inherited();
+with ( Spawner ) wave_timer = 0;
 with ( Player )
 {
 	component_deactivate_all();
@@ -10,7 +11,7 @@ music_play(msc_menu, true);
 var _sfx = snd_die;
 with ( component_get(Component.Health, Player) )
 {
-	if ( get() <= 1 )
+	if ( get() <= 0 )
 	{
 		_sfx = snd_game_lose;
 		music_play(undefined);

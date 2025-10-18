@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"card_blank",
+  "%Name":"card_draw_description",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"card_blank",
+  "name":"card_draw_description",
   "parent":{
-    "name":"Misc",
-    "path":"folders/Core/Cards/Misc.yy",
+    "name":"System",
+    "path":"folders/Core/Cards/System.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -18,10 +18,10 @@ if ( instance_number(object_index) > _max )
 	exit;
 }
 
-
-
-x = ( room_width/2 ) + choose(-room_width/2, room_width/2);
-y = ( room_height/2) + choose(-room_height/2, room_height/2);
+x = ( room_width/2 ) + choose(-room_width/1.5, room_width/1.5);
+y = ( room_height/2) + choose(-room_height/1.5, room_height/1.5);
+xstart = x;
+ystart = y;
 
 with ( Player )
 {

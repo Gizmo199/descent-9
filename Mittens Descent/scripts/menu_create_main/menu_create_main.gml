@@ -37,6 +37,7 @@ function menu_create_main(_fade=1){
 		function(_selected, _pressed){
 			if ( _selected && _pressed ) 
 			{
+				sfx_play(snd_blip);
 				gamefade(false, function(){
 					game_end();
 				});	

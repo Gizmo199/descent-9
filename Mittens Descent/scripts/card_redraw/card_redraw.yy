@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"card_redraw",
   "parent":{
-    "name":"Environment",
-    "path":"folders/Core/Cards/Environment.yy",
+    "name":"Misc",
+    "path":"folders/Core/Cards/Misc.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

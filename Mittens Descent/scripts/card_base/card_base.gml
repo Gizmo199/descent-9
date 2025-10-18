@@ -8,6 +8,7 @@ function card_base() constructor {
 	index= 0;
 	odds = function(){ return 100; }
 	limit= true;
+	collect = true;
 	
 	get_odds = function(){
 		var _cost = cost;

@@ -3,7 +3,7 @@ function card_duck() : card_base() constructor {
 	name = "Duck"
 	desc = function(){
 		var _icon = input_icon_text(INPUT_VERB.DOWN);
-		return $"Invincible from [c_red]falling hazard[c_white] damage while holding {_icon} on platforms. Halts wave progress";
+		return $"Invincible from [c_red]falling hazard[c_white] damage while holding {_icon} on platforms";
 	}
 	cost = [0, 0];
 	icon = sp_card_icon_agility;

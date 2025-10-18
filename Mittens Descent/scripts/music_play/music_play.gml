@@ -18,10 +18,9 @@ function music_play(_sound, _sync=false){
 		audio_sound_gain(__music, 0, _fade);
 		array_push(global.__music_fadelist, __music);
 		__music = undefined;
-		
-		if ( _sound == undefined ) return;
 	}
 	else _fade = 0;
+	if ( _sound == undefined ) return;
 	
 	__music = audio_play_sound_on(global.emitter_music, _sound, true, 1, 0);
 	__track_position[$ __music] ??= 0;

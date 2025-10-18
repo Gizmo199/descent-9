@@ -4,6 +4,7 @@ instance_define(id, "is_main", false);
 instance_define(id, "back", undefined);
 instance_define(id, "center", false);
 instance_define(id, "special", 0);
+instance_define(id, "card", false);
 
 fade_to_play = false;
 

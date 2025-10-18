@@ -1,17 +1,14 @@
 if ( instance_exists(Shop) ) exit;
 if ( wave > wave_count-1 ) exit;
-with ( component_get(Component.Duck, Player) ) if ( ducking ) exit;
 if ( instance_exists(EffectWaveComplete) ) exit;
-
-//if ( keyboard_check_pressed(vk_enter) )
-//{
-//	wave_timer = wave_times[wave];
-//	wave = wave_count;
-//}
 
 wave_timer += delta;
 if ( wave_timer >= wave_times[wave] )
 {
+	wave_wait = true;
+	with ( Enemy ) if ( outside_room() ) instance_destroy();
+	if ( instance_exists(Enemy) ) exit;
+	
 	with ( Enemy )
 	{
 		instance_destroy();
@@ -26,6 +23,7 @@ if ( wave_timer >= wave_times[wave] )
 	sfx_play(snd_explode_all);
 	redraw = true;
 	wave_timer = 0;
+	wave_wait = false;
 	wave++;	
 	if ( wave > wave_count-1 ) alarm[0] = 0;
 }

@@ -20,7 +20,20 @@ function shop_state_idle(){
 		with ( component_get(Component.Health, Player) ) apply_cost(-_card.cost[0], -_card.cost[1]);
 	
 		// Run selected card function
-		with ( cards[selected] ) func();
+		with ( cards[selected] )
+		{
+			func();
+			if ( collect ) 
+			{
+				array_push(global.cards, {
+					name	: name, 
+					desc	: desc,
+					cost	: cost,
+					icon	: icon,
+					index	: index
+				});
+			}
+		}
 		sfx_play(snd_blip);
 		sfx_play(choose(snd_spend_01, snd_spend_02));
 		

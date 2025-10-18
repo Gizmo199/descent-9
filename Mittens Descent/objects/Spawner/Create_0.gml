@@ -1,3 +1,4 @@
+wave_wait = false;
 wave = 0;
 wave_timer = 0;
 wave_count = global.settings.wave;

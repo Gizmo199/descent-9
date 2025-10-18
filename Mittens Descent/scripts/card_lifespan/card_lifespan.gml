@@ -5,6 +5,7 @@ function card_lifespan() : card_base() constructor {
 	cost = [1, 0];
 	icon = sp_card_icon_health;
 	index = 0;
+	collect = false;
 	func = function(){
 		with ( component_get(Component.Health, Player) ) add_max(2);	
 	}

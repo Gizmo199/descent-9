@@ -5,6 +5,7 @@ function card_redraw() : card_base() constructor {
 	cost = [0, 0];
 	icon = sp_card_icon_environment;	
 	index = 4;
+	collect = false;
 	func = function(){
 		with ( Spawner ) redraw = false;
 		with ( Shop ) 

@@ -36,6 +36,15 @@ function menu_create_main(_fade=1){
 			return menu_scribble("Controls", _selected);
 		},
 		function(_selected, _pressed){
+			if ( _selected && _pressed )
+			{
+				sfx_play(snd_blip);
+				menu_create_credits();
+				instance_destroy();
+			}
+			return menu_scribble("Credits", _selected);
+		},
+		function(_selected, _pressed){
 			if ( _selected && _pressed ) 
 			{
 				sfx_play(snd_blip);

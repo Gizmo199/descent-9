@@ -3,16 +3,6 @@ if ( wave >= wave_count-1 )
 {
 	_text = "FINAL";
 }
-var _canPause = true;
-with ( Player ) _canPause = can_pause;
-if ( _canPause && !instance_exists(Menu) )
-{
-	var _icon = input_icon_text(INPUT_VERB.START);
-	scribble($"[scale, 0.5][fnt_text_outline]Pause {_icon}")
-		.align(fa_right, fa_bottom)
-		.outline(C_BLACK)
-		.draw(room_width-8, room_height-8);
-}
 scribble($"[scale, 0.5][fnt_text_outline][wave]{_text}")
 	.align(fa_right, fa_top)
 	.outline(C_BLACK)

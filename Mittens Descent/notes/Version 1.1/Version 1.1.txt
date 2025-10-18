@@ -8,6 +8,7 @@ Menus
 - New card menu to view cards collected
 
 UI & UX
+- Settings are now automatically saved including bindings
 - Changed 'health' icon to be heart instead
 - Explosion effects and sounds in some places
 - New wave complete notification effect

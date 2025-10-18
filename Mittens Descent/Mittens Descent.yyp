@@ -324,6 +324,7 @@
     {"id":{"name":"draw_text_scribble_ext","path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},},
     {"id":{"name":"draw_text_scribble","path":"scripts/draw_text_scribble/draw_text_scribble.yy",},},
     {"id":{"name":"gamefade","path":"scripts/gamefade/gamefade.yy",},},
+    {"id":{"name":"gameload","path":"scripts/gameload/gameload.yy",},},
     {"id":{"name":"gamepause","path":"scripts/gamepause/gamepause.yy",},},
     {"id":{"name":"gamesave","path":"scripts/gamesave/gamesave.yy",},},
     {"id":{"name":"gamewindow","path":"scripts/gamewindow/gamewindow.yy",},},

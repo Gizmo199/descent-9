@@ -16,7 +16,7 @@ function menu_create_options(){
 			static _timer = 1;
 			if ( _selected ) 
 			{
-				var _gain = audio_emitter_get_gain(global.emitter_music);
+				var _gain = global.settings.volume.music;
 				var _ix = ( input_get(eBinding.Right) - input_get(eBinding.Left) ) * 0.1;
 				
 				if ( sign(_ix) != 0 )
@@ -34,17 +34,17 @@ function menu_create_options(){
 					if ( _gain > 0 ) _gain = 0;	
 					else _gain = 1;
 				}
-				
+				global.settings.volume.music = _gain;
 				audio_emitter_gain(global.emitter_music, _gain);
 			}
-			var _gain = audio_emitter_get_gain(global.emitter_music);
+			var _gain = global.settings.volume.music;
 			return menu_scribble($"Music : {round(_gain*100)}%", _selected);
 		},
 		function(_selected, _pressed){
 			static _timer = 1;
 			if ( _selected ) 
 			{
-				var _gain = audio_emitter_get_gain(global.emitter_sfx);
+				var _gain = global.settings.volume.sfx;
 				var _ix = ( input_get(eBinding.Right) - input_get(eBinding.Left) ) * 0.1;
 				
 				if ( sign(_ix) != 0 )
@@ -63,10 +63,10 @@ function menu_create_options(){
 					if ( _gain > 0 ) _gain = 0;	
 					else _gain = 1;
 				}
-				
+				global.settings.volume.sfx = _gain;
 				audio_emitter_gain(global.emitter_sfx, _gain);
 			}
-			var _gain = audio_emitter_get_gain(global.emitter_sfx);
+			var _gain = global.settings.volume.sfx;
 			return menu_scribble($"Sfx : {round(_gain*100)}%", _selected);
 		}
 	];

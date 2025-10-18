@@ -1,5 +1,7 @@
 #macro delta ( delta_time / 1000000 )
 #macro PAUSE_SCREEN_FILENAME "pause_screen.png"
+#macro FILENAME_SETTINGS "settings.txt"
+#macro FILENAME_COMPLETE "complete.txt"
 
 randomize();
 gpu_set_tex_filter(false);
@@ -19,10 +21,21 @@ global.emitter_sfx = audio_emitter_create();
 global.settings = { 
 	wave : 6,
 	fullscreen : ( os_get_config() == "HTML" ? false : true ),
-	hurtbox : false	
+	hurtbox : false,
+	controls : 
+	{
+		keyboard : InputBindingsExport(false),
+		gamepad  : InputBindingsExport(true)
+	},
+	volume : 
+	{
+		music : 0.5,
+		sfx : 0.5
+	}
 }
-audio_emitter_gain(global.emitter_music, 0.5);
-audio_emitter_gain(global.emitter_sfx, 0.5);
+gameload();
+audio_emitter_gain(global.emitter_music, global.settings.volume.music);
+audio_emitter_gain(global.emitter_sfx, global.settings.volume.sfx);
 
 fadein = false;
 if ( os_get_config() != "HTML" )

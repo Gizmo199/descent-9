@@ -35,7 +35,7 @@ function shop_state_init(){
 	{
 		if ( wave > wave_count-1 ) 
 		{
-			gamesave();
+			gamesave(true);
 			music_play(undefined);
 			sfx_play(snd_combat);
 			_this.win = true;

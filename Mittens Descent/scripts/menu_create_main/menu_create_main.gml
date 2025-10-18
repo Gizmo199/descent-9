@@ -1,5 +1,6 @@
 function menu_create_main(_fade=1){
 	
+	gamesave();
 	if ( room == rm_play ) 
 	{
 		menu_create_pause();

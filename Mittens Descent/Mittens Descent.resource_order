@@ -263,6 +263,7 @@
     {"name":"component_update","order":5,"path":"scripts/component_update/component_update.yy",},
     {"name":"draw_text_scribble_ext","order":1,"path":"scripts/draw_text_scribble_ext/draw_text_scribble_ext.yy",},
     {"name":"gamefade","order":11,"path":"scripts/gamefade/gamefade.yy",},
+    {"name":"gameload","order":15,"path":"scripts/gameload/gameload.yy",},
     {"name":"gamepause","order":14,"path":"scripts/gamepause/gamepause.yy",},
     {"name":"gamesave","order":12,"path":"scripts/gamesave/gamesave.yy",},
     {"name":"gamewindow","order":13,"path":"scripts/gamewindow/gamewindow.yy",},

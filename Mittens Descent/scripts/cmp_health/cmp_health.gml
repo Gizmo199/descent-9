@@ -102,17 +102,19 @@ function cmp_health(e) : cmp_base(e) constructor {
 	
 		static _sprite_width = sprite_get_width(sp_player_hp);	
 		static _sprite_height= sprite_get_height(sp_player_hp);
-		var _x = ( room_width/2 ) - ( _sprite_width * 0.5 * draw_max ) + _sprite_width/2;
+		var _x = ( room_width/2 ) - ( _sprite_width * 0.5 * min(draw_max, 20) ) + _sprite_width/2;
 		var _y = 12;
 		var i = 0;
+		var p = 0;
+		var o = 0;
 		repeat(draw_max)
 		{
 			var _index = ( i >= draw_hp );
 			var _drawboth = highlight_both[i];
 			var _sprite = ( highlight[i] ? sp_player_hp_highlight : sp_player_hp );
 						
-			var xx = _x;
-			var yy = _y;
+			var xx = _x + ( p * _sprite_width );
+			var yy = _y + o;
 			if ( _sprite = sp_player_hp_highlight )
 			{
 				xx += random_range(-0.25, 0.25);
@@ -158,8 +160,14 @@ function cmp_health(e) : cmp_base(e) constructor {
 			
 			draw_sprite(_sprite, _index, _pos.x, _pos.y);
 			if ( _drawboth ) draw_sprite(_sprite, !_index, _pos.x, _pos.y + _sprite_height/2);
-			_x += _sprite_width;
+			//_x += _sprite_width;
 			i++;
+			p++;
+			if ( p > 20 ) 
+			{
+				p = 0;
+				o += 9;
+			}
 		}
 		
 		// Reset effects

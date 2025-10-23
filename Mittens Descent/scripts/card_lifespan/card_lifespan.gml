@@ -15,6 +15,7 @@ function card_lifespan() : card_base() constructor {
 		{
 			if ( get() == _cost[0] ) return 0;
 			if ( get_max() < 7 ) return 30;
+			if ( get_max() > 15 ) return 1;
 		}
 		return 10;
 	}

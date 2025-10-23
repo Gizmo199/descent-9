@@ -1,0 +1,5 @@
+- [FIX] issue where enemy spawning can stop
+- [FIX] only drawing blank cards after getting too much HP
+- [FIX] HP no longer extends past the screen, and wraps around after 20
+- [FIX] Made lifespan only have a 1% chance to draw after HP max is greater than 15
+- [FIX]

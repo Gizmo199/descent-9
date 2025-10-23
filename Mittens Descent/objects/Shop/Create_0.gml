@@ -19,6 +19,7 @@ with ( component_get(Component.Health, Player) )
 }
 with ( Spawner ) 
 {
+	wave_wait = false;
 	if ( wave > wave_count-1 ) _sfx = snd_combat;
 	wave_timer = floor(wave_timer/2);
 }

@@ -13,7 +13,7 @@ function card_catnip() : card_base() constructor {
 		with ( component_get(Component.Health, Player) ) 
 		{
 			if ( get() >= get_max()-2 ) return 0;
-			return ( 1 - ( get()/9 )) * 100;
+			return max(( 1 - ( get()/max(get_max(), 1) )) * 100, 0);
 		}
 		return 0;
 	}

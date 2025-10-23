@@ -14,9 +14,14 @@ function card_base() constructor {
 		var _cost = cost;
 		with ( component_get(Component.Health, Player) )
 		{
-			if ( hp < _cost[0]+1 or hp_max < _cost[1]+1 ) return 0;	
+			if ( hp < _cost[0]+1 or hp_max < _cost[1]+1 )
+			{
+				return 0;	
+			}
 		}
-		return odds();
+		var _odds = odds();
+		//show_debug_message($"{name} : {_odds}");
+		return _odds;
 	}	
 
 }

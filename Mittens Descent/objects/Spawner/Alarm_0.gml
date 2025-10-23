@@ -1,14 +1,9 @@
-if ( instance_exists(EffectWaveComplete) or wave_wait ) 
+alarm[0] = wave_rates[wave];
+if ( instance_exists(EffectWaveComplete) || wave_wait || instance_exists(Shop) ) 
 {
-	alarm[0] = 1;
+	alarm[0] = 2;
 	exit;
 }	
-alarm[0] = wave_rates[wave];
-if ( instance_exists(Shop) )
-{
-	alarm[0] = 1;
-	exit;
-}
 
 var _wave_enemy = wave_enemy[wave];
 var _wave_weight= wave_weight[wave];

@@ -1,5 +1,9 @@
 if ( instance_exists(Shop) ) exit;
-if ( wave > wave_count-1 ) exit;
+if ( wave > wave_count-1 ) 
+{
+	wave_wait = false;
+	exit;
+}
 if ( instance_exists(EffectWaveComplete) ) exit;
 
 wave_timer += delta;

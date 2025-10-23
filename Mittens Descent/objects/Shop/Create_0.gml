@@ -5,6 +5,7 @@ with ( Player )
 	component_activate(Component.Health);
 	sprite_index = sp_player_die;
 }
+with ( EffectWaveComplete ) instance_destroy();
 music_play(msc_menu, true);
 
 var _sfx = snd_die;

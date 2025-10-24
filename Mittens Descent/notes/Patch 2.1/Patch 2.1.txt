@@ -1,0 +1,5 @@
+## Hotfix
+- Naptime cannot be used with impurrvious any longer
+- Tweaked number of enemies during endless (wave times get shorter the more cards you have)
+- Fixed an issue with removing impurrvious after winning wave 9 in normal mode
+

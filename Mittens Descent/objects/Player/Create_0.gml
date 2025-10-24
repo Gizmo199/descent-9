@@ -19,3 +19,9 @@ black = [
 timer = 1;
 blink = false;
 can_pause = true;
+
+if ( global.endless_mode )
+{
+	component_add(Component.Endless);
+	component_add(Component.Score);	
+}

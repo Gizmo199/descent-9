@@ -13,6 +13,7 @@ scribble_anim_shake(0.5, 1);
 display_set_gui_size(640, 360);
 window_set_cursor(cr_none);
 
+global.endless_mode = false;
 global.new_highscore = false;
 global.cards = [];
 global.card_instance = [];
@@ -33,7 +34,8 @@ global.settings = {
 		music : 0.5,
 		sfx : 0.5
 	},
-	highscore : 0
+	highscore : 0,
+	endless_mode : false
 }
 gameload();
 audio_emitter_gain(global.emitter_music, global.settings.volume.music);

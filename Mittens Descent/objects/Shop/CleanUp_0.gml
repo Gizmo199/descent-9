@@ -15,5 +15,12 @@ with ( Spawner )
 		wave : wave+1,
 		text : $"ENDLESS MODE"
 	});
+	
+	// Restore player HP and MAX HP
+	with ( component_get(Component.Health, Player) )
+	{
+		while ( get_max() < 9 ) add_max(1);
+		while ( get() < 9 ) add(1);
+	}
 }
 

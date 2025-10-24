@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_score_01",
+  "%Name":"snd_score_major",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.53845805,
-  "name":"snd_score_01",
+  "duration":0.71154195,
+  "name":"snd_score_major",
   "parent":{
     "name":"Sounds",
     "path":"folders/Audio/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_score_01.ogg",
+  "soundFile":"snd_score_major.ogg",
   "type":1,
-  "volume":0.3,
+  "volume":1.0,
 }

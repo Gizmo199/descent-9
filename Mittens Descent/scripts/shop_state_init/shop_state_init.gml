@@ -26,6 +26,8 @@ function shop_state_init(){
 			_this.win = false;
 			_this.state = shop_state_create_end_screen;
 			highlight_cost(0, get_max());
+			
+			if ( global.new_highscore ) sfx_play(snd_score_major);
 			return;
 		}
 	}
@@ -39,6 +41,8 @@ function shop_state_init(){
 		{
 			if ( wave >= 9 ) 
 			{
+				global.settings.endless_mode = true;
+				gamesave(true);
 				global.__card_forced = [eCard.Win, eCard.Endless];	
 				global.__card_draw_count = 2;
 				_this.endless_check = true;

@@ -99,10 +99,11 @@ function cmp_health(e) : cmp_base(e) constructor {
 	draw = function(){
 		
 		highlight_update_array();
-	
+		
+		var _maxW = 15;
 		static _sprite_width = sprite_get_width(sp_player_hp);	
 		static _sprite_height= sprite_get_height(sp_player_hp);
-		var _x = ( room_width/2 ) - ( _sprite_width * 0.5 * min(draw_max, 20) ) + _sprite_width/2;
+		var _x = ( room_width/2 ) - ( _sprite_width * 0.5 * min(draw_max, _maxW) ) + _sprite_width/2;
 		var _y = 12;
 		var i = 0;
 		var p = 0;
@@ -163,7 +164,7 @@ function cmp_health(e) : cmp_base(e) constructor {
 			//_x += _sprite_width;
 			i++;
 			p++;
-			if ( p > 20 ) 
+			if ( p > _maxW-1 ) 
 			{
 				p = 0;
 				o += 9;

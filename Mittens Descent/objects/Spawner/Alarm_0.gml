@@ -1,4 +1,11 @@
-alarm[0] = wave_rates[wave];
+var _rate = wave_rates[wave];
+
+if ( global.endless_mode ) 
+{
+	if ( array_length(global.cards) > 6 ) _rate = ceil(_rate/2);
+	if ( array_length(global.cards) > 12) _rate = ceil(_rate/3);
+}
+alarm[0] = _rate;
 if ( instance_exists(EffectWaveComplete) || wave_wait || instance_exists(Shop) ) 
 {
 	alarm[0] = 2;

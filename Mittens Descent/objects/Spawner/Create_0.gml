@@ -29,9 +29,19 @@ wave_weight =
 	[10, 20, 30, 40],
 	[25, 25, 25, 25]
 ];
-wave_rates = [30, 60, 65, 65, 65, 65, 60, 55, 50, 45];	// How often things spawn
+wave_rates = [30, 60, 65, 65, 65, 65, 60, 55, 50, 60];	// How often things spawn
 wave_times = [8, 12, 15, 20, 25, 28, 30, 33, 36, 1];	// How long each wave is
+if ( global.endless_mode )
+{
+	wave = wave_count;
+	wave_timer = 1;
+	instance_create_layer(0, 0, "Complete", EffectWaveComplete, {
+		wave : wave+1,
+		text : $"ENDLESS MODE"
+	});
+}
 alarm[0] = wave_rates[wave];
 redraw = true;
 //wave = wave_count-1;
 //wave_timer = 100;
+

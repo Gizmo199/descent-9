@@ -11,6 +11,10 @@ if ( --wait > 0 ) wait = 0;
 x = dest_x;
 y = dest_y;
 dest_y++;
+with ( Spawner ) 
+{
+	if ( wave < 8 ) other.dest_y++;
+}	
 
 if ( timer && !--timer )
 {

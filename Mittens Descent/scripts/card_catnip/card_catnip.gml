@@ -10,6 +10,7 @@ function card_catnip() : card_base() constructor {
 		with ( component_get(Component.Health, Player) ) add(100);
 	}
 	odds = function(){
+		with ( component_get(Component.Endless, Player) ) return 0;
 		with ( component_get(Component.Health, Player) ) 
 		{
 			if ( get() >= get_max()-2 ) return 0;

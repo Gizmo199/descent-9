@@ -534,6 +534,8 @@
     {"name":"snd_jump_01","order":6,"path":"sounds/snd_jump_01/snd_jump_01.yy",},
     {"name":"snd_jump_02","order":7,"path":"sounds/snd_jump_02/snd_jump_02.yy",},
     {"name":"snd_score_01","order":18,"path":"sounds/snd_score_01/snd_score_01.yy",},
+    {"name":"snd_score_02","order":19,"path":"sounds/snd_score_02/snd_score_02.yy",},
+    {"name":"snd_score_major","order":21,"path":"sounds/snd_score_major/snd_score_major.yy",},
     {"name":"snd_spend_01","order":2,"path":"sounds/snd_spend_01/snd_spend_01.yy",},
     {"name":"snd_spend_02","order":3,"path":"sounds/snd_spend_02/snd_spend_02.yy",},
     {"name":"snd_success","order":17,"path":"sounds/snd_success/snd_success.yy",},

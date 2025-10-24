@@ -6,6 +6,7 @@
 - [FIX] Lifespan only regains +1 MAXHP now instead of +2
 - [FIX] Reduced lucky cat to 12% chance of dropping HP tokens
 - [FIX] Mezzanine no longer draws above player and enemies
+- [FIX] Murder mittens 16% more likely to show up in endless mode
 
 ## Features
 - [ADD] Endless card - Allows endless play
@@ -13,3 +14,5 @@
 - [ADD] Score & Highscore during endless mode
 - [ADD] Avoiding enemies gives +100 points
 - [ADD] Murder mittens gives +200 points when destroying enemies
+- [ADD] Starting endless mode restores up to 9 MAXHP and HP
+- [ADD] Catnip will not spawn during endless mode

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_win",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_win",
+  "parent":{
+    "name":"System",
+    "path":"folders/Core/Cards/System.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

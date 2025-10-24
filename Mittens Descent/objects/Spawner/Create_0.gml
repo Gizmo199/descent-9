@@ -13,6 +13,7 @@ wave_enemy =
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death],
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death],
 	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death],
+	[obj_falling_rock, obj_enemy_skyclaw, obj_enemy_shrieklaw, obj_enemy_death]
 ];
 wave_weight = 
 [
@@ -26,8 +27,11 @@ wave_weight =
 	[20, 10, 25, 30],
 	[25, 25, 25, 25],
 	[10, 20, 30, 40],
+	[25, 25, 25, 25]
 ];
-wave_rates = [30, 60, 60, 65, 65, 65, 60, 60, 55];	// How often things spawn
-wave_times = [8, 12, 15, 20, 25, 28, 30, 33, 36];	// How long each wave is
+wave_rates = [30, 60, 65, 65, 65, 65, 60, 55, 50, 45];	// How often things spawn
+wave_times = [8, 12, 15, 20, 25, 28, 30, 33, 36, 1];	// How long each wave is
 alarm[0] = wave_rates[wave];
 redraw = true;
+//wave = wave_count-1;
+//wave_timer = 100;

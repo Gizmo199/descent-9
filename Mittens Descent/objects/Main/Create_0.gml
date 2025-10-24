@@ -13,6 +13,7 @@ scribble_anim_shake(0.5, 1);
 display_set_gui_size(640, 360);
 window_set_cursor(cr_none);
 
+global.new_highscore = false;
 global.cards = [];
 global.card_instance = [];
 global.enemy_damager = undefined;
@@ -31,7 +32,8 @@ global.settings = {
 	{
 		music : 0.5,
 		sfx : 0.5
-	}
+	},
+	highscore : 0
 }
 gameload();
 audio_emitter_gain(global.emitter_music, global.settings.volume.music);

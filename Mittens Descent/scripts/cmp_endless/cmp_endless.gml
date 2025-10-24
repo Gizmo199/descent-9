@@ -1,0 +1,1 @@
+function cmp_endless(e) : cmp_base(e) constructor {}

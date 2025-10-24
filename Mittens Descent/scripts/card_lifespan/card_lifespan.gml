@@ -1,13 +1,13 @@
 function card_lifespan() : card_base() constructor {
 	
 	name = "Lifespan"
-	desc = "Gain +2 [sp_player_hp_token, 1]";
+	desc = "Gain +1 [sp_player_hp_token, 1]";
 	cost = [1, 0];
 	icon = sp_card_icon_health;
 	index = 0;
 	collect = false;
 	func = function(){
-		with ( component_get(Component.Health, Player) ) add_max(2);	
+		with ( component_get(Component.Health, Player) ) add_max(1);	
 	}
 	odds = function(){
 		var _cost = cost;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"score_add",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"score_add",
+  "parent":{
+    "name":"Utils",
+    "path":"folders/Scripts/Utils.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -17,9 +17,13 @@ enum eCard {
 	Impurrvious,
 	MurderMittens,
 	
+	Win,
+	Endless,
+	
 	Sizeof
 }
 global.__card_forced = [];
+global.__card_draw_count = 3;
 //global.__card_forced = [eCard.LuckyCat];
 
 show_debug_message($"Total number of cards : {eCard.Sizeof}");
@@ -55,3 +59,5 @@ card_register(eCard.HighGround, card_high_ground);
 card_register(eCard.LuckyCat, card_lucky_cat);
 card_register(eCard.Impurrvious, card_impurrvious);
 card_register(eCard.MurderMittens, card_murder_mittens);
+card_register(eCard.Endless, card_endless);
+card_register(eCard.Win, card_win);

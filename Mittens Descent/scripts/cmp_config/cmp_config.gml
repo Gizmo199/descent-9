@@ -13,6 +13,8 @@ enum Component {
 	Hurtbox,
 	Shield,
 	Luck,
+	Endless,
+	Score,
 	Sizeof
 }
 #macro __entity_component_array struct_get_from_hash(self, global.__component_hash)
@@ -37,3 +39,5 @@ component_define(Component.Hurtbox, cmp_hurtbox);
 component_define(Component.Luck, cmp_luck);
 component_define(Component.Shield, cmp_shield);
 component_define(Component.JumpDestroy, cmp_jumpdestroy);
+component_define(Component.Endless, cmp_endless);
+component_define(Component.Score, cmp_score);

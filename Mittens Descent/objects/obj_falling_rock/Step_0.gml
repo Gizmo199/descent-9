@@ -18,7 +18,11 @@ if ( --wait > 0 )
 	exit;
 }
 
-if ( place_meeting(x, y+1, Collider) ) instance_destroy();
+if ( place_meeting(x, y+1, Collider) ) 
+{
+	score_add(x, y);
+	instance_destroy();
+}
 			
 // Fall
 vsp += grv;
@@ -43,6 +47,7 @@ if ( place_meeting(x, y+vsp, Collider) )
 		while ( !place_meeting(x, y+1, Collider) ) y++;
 		if ( place_meeting(x, y, Hurtbox) )
 		{
+			score_add(x, y);
 			var _hb = instance_nearest(x, y, Hurtbox);
 			on_collision(_hb);
 		}
@@ -98,4 +103,8 @@ if ( place_meeting(x, y+vsp, Collider) )
 
 x += hsp;
 if ( y < room_height ) exit;
-if ( outside_room() ) instance_destroy();
+if ( outside_room() ) 
+{
+	score_add(x, y);
+	instance_destroy();
+}

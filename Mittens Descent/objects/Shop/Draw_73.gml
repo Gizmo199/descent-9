@@ -7,6 +7,19 @@ if ( state == shop_state_create_end_screen )
 	{
 		var _t0 = $"[fnt_title_outline][c_red][wave]YOU LOSE";
 		var _t1 = $"[fnt_text_outline][scale, 0.5]Sorry it didn't work out! :(\n Death is unfair. That said...\n\nThanks for playing!";
+		
+		with ( component_get(Component.Score, Player) )
+		{
+			_t1 = "[fnt_text_outline][wave]";
+			if ( global.new_highscore )
+			{
+				_t1 += "[/wave][shake][c_red]New Highscore[/shake][c_white][wave]\n";
+			}
+			_t1 += $"[scale, 1]{get()}[scale, 0.5]";
+			if ( !global.new_highscore ) _t1 += $"\nHighscore [c_red]{global.settings.highscore}[c_white]";
+			_t1 += "\n\nThanks for playing!";
+		}
+		component_deactivate(Component.Score, Player);
 	}
 	var _scb = scribble(_t0)
 				.align(fa_center, fa_center)

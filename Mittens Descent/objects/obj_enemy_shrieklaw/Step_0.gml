@@ -48,5 +48,9 @@ else
 		dest_x = xstart;
 		dest_y = ystart;
 	}
-	else if ( journey < 0 ) instance_destroy();
+	else if ( journey < 0 )
+	{
+		score_add(x, y);
+		instance_destroy();
+	}
 }

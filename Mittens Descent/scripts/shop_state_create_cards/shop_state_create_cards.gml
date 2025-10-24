@@ -3,7 +3,7 @@ function shop_state_create_cards(){
 	// Create cards
 	if ( array_length(cards) <= 0 )
 	{
-		var _n = 3;
+		var _n = global.__card_draw_count;
 		var _w = sprite_get_width(sp_card_back);
 		var _x = ( room_width/2 ) - ( _n * _w * 0.5 ) + _w * 0.5;
 							
@@ -33,6 +33,9 @@ function shop_state_create_cards(){
 			_x += _w;
 		}
 	}
+	
+	// Last wave with endless cards forced?
+	if ( endless_check ) global.__card_forced = [];
 	
 	// Update card positions and proceed
 	var _proceed = true;

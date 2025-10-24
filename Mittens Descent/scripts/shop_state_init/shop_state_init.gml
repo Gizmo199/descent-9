@@ -31,17 +31,30 @@ function shop_state_init(){
 	}
 	
 	// Win?
-	with ( Spawner )
+	var _check_end = true;
+	with ( component_get(Component.Endless, Player) ) _check_end = false;
+	if ( _check_end )
 	{
-		if ( wave > wave_count-1 ) 
+		with ( Spawner )
 		{
-			gamesave(true);
-			music_play(undefined);
-			_this.win = true;
-			_this.state = shop_state_create_end_screen;
-			return;
-		}
-	}	
+			if ( wave >= 9 ) 
+			{
+				global.__card_forced = [eCard.Win, eCard.Endless];	
+				global.__card_draw_count = 2;
+				_this.endless_check = true;
+				_this.state = shop_state_create_cards;
+				return;
+			}
+			if ( wave > wave_count-1 ) 
+			{
+				gamesave(true);
+				music_play(undefined);
+				_this.win = true;
+				_this.state = shop_state_create_end_screen;
+				return;
+			}
+		}	
+	}
 	
 	// Normal shop
 	state = shop_state_create_cards;

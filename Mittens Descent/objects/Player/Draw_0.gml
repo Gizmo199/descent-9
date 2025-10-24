@@ -22,14 +22,14 @@ if ( !blink )
 }
 component_draw_all();
 
-if ( !instance_exists(Shop) )
-{
-	with ( Mezzanine ) 
-	{
-		image_index = 1;
-		draw_self();
-		image_index = 0;
-	}
-}
+//if ( !instance_exists(Shop) )
+//{
+//	with ( Mezzanine ) 
+//	{
+//		image_index = 1;
+//		draw_self();
+//		image_index = 0;
+//	}
+//}
 with ( component_get(Component.Naptime) ) automatic_draw = false;
 component_draw(Component.Naptime);

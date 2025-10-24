@@ -46,6 +46,7 @@ function cmp_platformer(e) : cmp_base(e) constructor {
 				var _snd = snd_explosion_01;
 				with ( _enemy )
 				{
+					score_add(x, y, 200);
 					instance_create_depth(x, y, depth, EffectOneshot, {
 						sprite_index : explosion,
 						image_index  : 0

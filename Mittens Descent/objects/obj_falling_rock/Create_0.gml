@@ -28,7 +28,7 @@ var _wave = 0;
 with ( Spawner ) _wave = wave;
 if ( _wave > 1 ) _total = 2;
 if ( _wave > 3 ) _total = 3;
-if ( _wave == global.settings.wave-1 ) _total = 10;
+if ( _wave >= global.settings.wave-1 ) _total = 10;
 if ( _number >= _total ) 
 {
 	instance_destroy();

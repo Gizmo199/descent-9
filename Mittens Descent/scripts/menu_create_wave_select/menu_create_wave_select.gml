@@ -35,6 +35,16 @@ function menu_create_wave_select(){
 				i++;
 			}
 			title = $"Waves : {global.settings.wave}";
+			
+			if ( global.settings.wave == 9 )
+			{
+				scribble("[wave][fnt_text_outline][scale, 0.5]Optional [c_red]endless mode[c_white] when completing all 9 waves")
+					.align(fa_center, fa_center)
+					.outline(C_BLACK)
+					.wrap(room_width/1.5)
+					.draw(room_width/2, ( room_height/2 ) - 16);
+			}
+			
 			return menu_scribble($"[c_white]{_text}", _selected);
 		}		
 	];

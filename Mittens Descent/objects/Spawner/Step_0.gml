@@ -22,7 +22,8 @@ if ( wave_timer >= wave_times[wave] )
 		});
 	}
 	instance_create_layer(0, 0, "Complete", EffectWaveComplete, {
-		wave : wave+1
+		wave : wave+1,
+		text : $"WAVE {wave+1}/{global.settings.wave} COMPLETE"
 	});
 	sfx_play(snd_explode_all);
 	redraw = true;

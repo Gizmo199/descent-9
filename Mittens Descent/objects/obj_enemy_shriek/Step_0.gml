@@ -19,7 +19,11 @@ if ( radius < radius_max )
 else
 {
 	if ( timer <= 0 ) timer = _timer * 3;
-	if ( timer && !--timer ) instance_destroy();
+	if ( timer && !--timer )
+	{
+		score_add(x, y);
+		instance_destroy();
+	}
 }
 
 if ( radius > 12 )

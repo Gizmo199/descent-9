@@ -1,5 +1,5 @@
 function cmp_luck(e) : cmp_base(e) constructor {
 	
-	chance = 15;
+	chance = 12;
 	
 }

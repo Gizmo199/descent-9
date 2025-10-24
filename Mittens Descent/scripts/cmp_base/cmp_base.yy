@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"cmp_base",
   "parent":{
-    "name":"Components",
-    "path":"folders/Core/ECS/Components.yy",
+    "name":"ECS",
+    "path":"folders/Core/ECS.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

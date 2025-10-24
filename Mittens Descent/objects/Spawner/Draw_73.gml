@@ -1,7 +1,11 @@
 var _text = $"WAVE {clamp(wave+1, 1, 9)}";
 if ( wave >= wave_count-1 )
 {
-	_text = "FINAL";
+	_text = "Final";
+	with ( component_get(Component.Endless, Player) )
+	{
+		_text = "Endless";	
+	}
 }
 scribble($"[scale, 0.5][fnt_text_outline][wave]{_text}")
 	.align(fa_right, fa_top)

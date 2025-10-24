@@ -1,4 +1,8 @@
-if ( abs(angle_cur) > angle_max ) instance_destroy();	
+if ( abs(angle_cur) > angle_max ) 
+{
+	score_add(x, y);
+	instance_destroy();	
+}
 if ( intro )
 {
 	if ( y > sprite_height ) 

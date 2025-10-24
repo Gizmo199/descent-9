@@ -1,11 +1,15 @@
 event_inherited();
+endless_check = false;
+global.__card_draw_count = 3;
 with ( Player )
 {
 	component_deactivate_all();
 	component_activate(Component.Health);
+	component_activate(Component.Score);
 	sprite_index = sp_player_die;
 }
 with ( EffectWaveComplete ) instance_destroy();
+with ( EffectReminder ) instance_destroy();
 music_play(msc_menu, true);
 
 var _sfx = snd_die;
@@ -17,12 +21,15 @@ with ( component_get(Component.Health, Player) )
 		music_play(undefined);
 	}
 }
+var _check_end = true;
+with ( component_get(Component.Endless, Player) ) _check_end = false;
 with ( Spawner ) 
 {
 	wave_wait = false;
-	if ( wave > wave_count-1 ) _sfx = snd_combat;
+	if ( wave > wave_count-1 && _check_end ) _sfx = snd_combat;
 	wave_timer = floor(wave_timer/2);
 }
+
 sfx_play(_sfx);
 
 win = true;

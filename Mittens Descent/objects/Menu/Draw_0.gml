@@ -50,6 +50,11 @@ if ( is_main )
 	var _y = ( room_height/2.125 ) - _sep;
 	draw_sprite(sp_title, 0, room_width/2, _y + dcos((current_time+180)/10)*2);
 	draw_sprite(sp_player_shop, 0, room_width/2, _y + _sep + 24 + dcos(current_time/10)*2); 
+	
+	scribble($"[wave][fnt_text_outline][scale, 0.5]Highscore [c_red]{global.settings.highscore}[c_white]")
+		.align(fa_center, fa_bottom)
+		.outline(C_BLACK)
+		.draw(room_width/2, room_height - 8);
 }
 else
 {

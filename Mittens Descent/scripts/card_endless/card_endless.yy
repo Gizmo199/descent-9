@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"card_endless",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"card_endless",
+  "parent":{
+    "name":"System",
+    "path":"folders/Core/Cards/System.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

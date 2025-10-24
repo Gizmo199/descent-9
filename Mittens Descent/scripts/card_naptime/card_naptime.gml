@@ -1,7 +1,7 @@
 function card_naptime() : card_base() constructor {
 	
 	name = "Naptime"
-	desc = "Do not move for 1.5s to gain +1 [sp_player_hp_token, 0]";
+	desc = "Do not move for 1.5s to gain +1 [sp_player_hp_token, 0]. Cannot use while [c_red]Impurrvious[c_white] is active";
 	cost = [0, 1];
 	icon = sp_card_icon_health;
 	index = 1;

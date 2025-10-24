@@ -11,6 +11,7 @@ function card_endless() : card_base() constructor {
 			component_add(Component.Endless);
 			component_add(Component.Score);
 		}
+		global.endless_mode = true;
 	}
 	odds = function(){
 		return 0;

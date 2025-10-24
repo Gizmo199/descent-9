@@ -13,7 +13,7 @@ if ( state == shop_state_create_end_screen )
 			_t1 = "[fnt_text_outline][wave]";
 			if ( global.new_highscore )
 			{
-				_t1 += "[/wave][shake][c_red]New Highscore[/shake][c_white][wave]\n";
+				_t1 += "[/wave][shake][c_red]NEW HIGHSCORE[/shake][c_white][wave]\n";
 			}
 			_t1 += $"[scale, 1]{get()}[scale, 0.5]";
 			if ( !global.new_highscore ) _t1 += $"\nHighscore [c_red]{global.settings.highscore}[c_white]";
@@ -26,8 +26,9 @@ if ( state == shop_state_create_end_screen )
 				.outline(C_BLACK);
 	var _box = _scb.get_bbox(room_width/2, room_height/2);
 	_scb.draw(room_width/2, room_height/2);
-		
-	scribble(_t1 + "\n[scale, 0.33][wave][c_red]press any key to continue...")
+	
+	var _icon = menu_input_text(INPUT_VERB.PRIMARY, "to continue...");
+	scribble(_t1 + $"\n[scale, 0.33][wave][c_red]Press {_icon}")
 		.align(fa_center, fa_top)
 		.outline(C_BLACK)
 		.draw(room_width/2, _box.bottom);

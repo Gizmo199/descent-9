@@ -70,7 +70,7 @@ function menu_create_wave_select(_endless_unlocked=global.settings.endless_mode)
 				{
 					var _desc = "Optional";
 					if ( !global.settings.endless_mode ) _desc = "Unlock";
-					scribble($"[wave][fnt_text_outline][scale, 0.5]{_desc} [c_red]endless mode[c_white] when completing all 9 waves")
+					scribble($"[wave][fnt_text_outline][scale, 0.5]{_desc} [c_red]ENDLESS MODE[c_white] when completing all 9 waves")
 						.align(fa_center, fa_center)
 						.outline(C_BLACK)
 						.wrap(room_width/1.5)

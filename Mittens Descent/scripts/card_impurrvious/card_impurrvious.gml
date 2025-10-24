@@ -10,7 +10,7 @@ function card_impurrvious() : card_base() constructor {
 	}
 	odds = function(){
 		if ( component_exists(Component.Shield, Player) ) return 0;
-		return 43;
+		return 25;
 	}
 	
 }

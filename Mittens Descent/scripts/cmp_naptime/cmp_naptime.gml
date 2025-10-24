@@ -7,8 +7,21 @@ function cmp_naptime(e) : cmp_base(e) constructor {
 	using = false;
 	zpos = 0;
 	update = function(){
-				
+		
 		var c = self;
+		
+		// Cannot use with impurrvious
+		with ( component_get(Component.Shield, entity) )
+		{
+			if ( !used ) 
+			{
+				c.zpos = 0;
+				c.using = false;
+				c.timer = 0;
+				return;
+			}
+		}	
+		
 		with ( entity )
 		{
 			c.xprev ??= x;

@@ -2,8 +2,9 @@ var _rate = wave_rates[wave];
 
 if ( global.endless_mode ) 
 {
-	if ( array_length(global.cards) > 6 ) _rate = ceil(_rate/2);
-	if ( array_length(global.cards) > 12) _rate = ceil(_rate/3);
+	if ( array_length(global.cards) > 6 ) _rate = ceil(_rate/1.5);
+	if ( array_length(global.cards) > 8)  _rate = ceil(_rate/1.8);
+	if ( array_length(global.cards) > 12) _rate = ceil(_rate/2);
 }
 alarm[0] = _rate;
 if ( instance_exists(EffectWaveComplete) || wave_wait || instance_exists(Shop) ) 
